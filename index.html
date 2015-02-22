@@ -101,51 +101,79 @@
   </aside>
 </section>
 
-<!-- Less modern dev -------------------------------------------------------------------------->
+<!-- Not so modern web dev -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
-  <h3>Less modern dev</h3>
-  <ul>
-    <li>Site built using a text editor and web browser</li>
-    <li>Some amount of jQuery</li>
-    <li>No use of a library such as Backbone or a framework such as AngularJS</li>
-    <li>Poor testing practices</li>
-    <li>Raw files deployed to webserver without packaging</li>
-  </ul>
-  <hr>
-  <aside class="notes" data-markdown="">
-    ---
-    > In order to add context let's consider what is not considered modern web development
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Not so modern web dev</h3>
+    <ul>
+      <li>Sites built using a generic text editor</li>
+      <li>Raw files deployed to webserver without packaging</li>
+      <li>One or few monolithic source files with no real code organization</li>
+      <li>No use of: Backbone, Ember, Knockout, React or Angular</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > Today we have specialized text editors which understand JavaScript syntax and provide a host of features for working with web content. Most modern editors support plugins which can help spot common errors. If you're using a lame editor you may be missing out! More about this later.
 
-    > Then we'll look at tools and processes which build on a basic foundation to create a more modern approach
+      > Raw files deployed to webserver without packaging: This isn't something you have to do, but for larger projects it can make a really big difference by reducing site load times.
 
-    > So, not too long ago sites were built using tools like Dreamweaver or basic text editors. The sites were essentially HTML, CSS and JavaScript with sprinklings of jQuery.
+      > Monolithic source files with no real code organization: Today's tools support code organization and help to create maintainable web applications.
 
-    > Less modern sites don't use of a library or framework which would help to structure code for maintainability.
+      > No use of: Backbone, Ember, Knockout, React or Angular: Following our last point on code organization, there are lots of libraries and frameworks which help structure web projects. For non-trivial projects you really should be using one of them. Which you should use can be a subject of some heated debate.
+    </aside>
+  </section>
 
-    > Less modern sites don't include any unit testing of JavaScript code
-  </aside>
-</section>
+  <!-- Not so modern web dev -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <ul>
+      <li>No use of source control</li>
+      <li>Manual and repetitive processes to work with site files before and during deployment</li>
+      <li>No use of code linters, style checkers, or beautifiers</li>
+      <li>Little or no testing practices</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > Modern web devs use source control systems such as Git, even when working on a single personal project on their local machines.
 
-<!-- More modern dev -------------------------------------------------------------------------->
-<section data-transition="linear" data-transition-speed="medium">
-  <h3>More modern dev</h3>
-  <ul>
-    <li>Seperation of concerns</li>
-    <li>Model, View, Controllers</li>
-    <li>Libraries and frameworks to add structure and improve maintainability</li>
-    <li>Tools, called linters, that help spot issues and support maintaining best practices</li>
-  </ul>
-  <hr>
-  <aside class="notes" data-markdown="">
-    ---
-    > A good way to understand modern web development is to understand what problems it tries to solved
+      > Working on a project often requires a number of tasks which can be executed manually or automated. Modern web dev favors automation.
 
-    > So, not too long ago sites were built using tools like Dreamweaver or basic text editors. The sites were essentially HTML, CSS and JavaScript with sprinklings of jQuery.
+      > No use of code linters, style checkers, or beautifiers: Code quality matters! Don't leave this to chance or good will. Modern web devs use each of these tools, in best cases these tools run as part of background automation.
 
-    > Web projects have become increasingly complex. A large web application might include dozens of programmers and an almost equal part of designers, user interface and experience experts, QA, product and project managers.
+      > Little or no testing: Modern web devs ensure their code includes tests. Remember, code is only theoretically complete without tests. By "complete" I mean complete relative to established requirements and requirements are the thing your tests confirm.
 
-    > Some web applications take an army to create and maintain.
-  </aside>
+      > As a precusor to the rest of our talk: Modern web devs accomplish more using tool automation and libraries and framework.  It's about applying leverage. Working smarter and not harder.
+    </aside>
+  </section>
+
+  <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>If you're not doing these things - then your dev cycles might feel a bit like this...</h3>
+  </section>
+
+  <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Jane! Stop this crazy thing!</h3>
+    <img style="border: 0; padding: 20px;" src="images/jane-stop-this-crazy-thing.jpg">
+    <aside class="notes" data-markdown="">
+      ---
+      > Modern web tools help add sanity to todays requirements by allowing devs to take control.
+    </aside>
+  </section>
+
+  <!-- Modern web dev -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Modern web dev</h3>
+    <ul>
+      <li>Seperation of concerns</li>
+      <li>Model, View, Controllers</li>
+      <li>Libraries and frameworks to add structure and improve maintainability</li>
+      <li>Tools that help spot issues and support maintaining best practices</li>
+      <li>Automation, automation, automation</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
 </section>
 
 
@@ -155,7 +183,6 @@
   <ul>
     <li></li>
   </ul>
-  <hr>
   <aside class="notes" data-markdown="">
     ---
     >
@@ -168,7 +195,6 @@
   <ul>
     <li></li>
   </ul>
-  <hr>
   <aside class="notes" data-markdown="">
     ---
     >
@@ -181,7 +207,6 @@
   <ul>
     <li></li>
   </ul>
-  <hr>
   <aside class="notes" data-markdown="">
     ---
     > minification
@@ -196,7 +221,6 @@
   <ul>
     <li></li>
   </ul>
-  <hr>
   <aside class="notes" data-markdown="">
     ---
     > coffee script
@@ -212,7 +236,6 @@
     <ul>
       <li></li>
     </ul>
-    <hr>
     <aside class="notes" data-markdown="">
       ---
       >
@@ -229,7 +252,6 @@
       <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
       <li>JS is also being used in Robotics, checkout Cylon.js and NodeBots</li>
     </ul>
-    <hr>
     <aside class="notes" data-markdown="">
       ---
       > JavaScript on the front end
@@ -344,7 +366,7 @@
     <img style="border: 0; padding: 20px;" src="images/TypeTeach_US_and_New_Tab.png">
     <aside class="notes" data-markdown="">
       ---
-      > If you're looking for keys and poking your keyboard using to fingers you're not moving as fast as you could.
+      > If you're looking for keys and poking your keyboard using two fingers you're not moving as fast as you could.
 
       > Futhermore, and this is important, you're spending too much time thinking about typing when you should be thinking about your code.
 
@@ -382,11 +404,6 @@
     <li>Email: cjus34@gmail.com</li>
     <li>About: http://cjus.me</li>
   </ul>
-  <hr>
-  <aside class="notes" data-markdown="">
-    ---
-    >
-  </aside>
 </section>
 
 
