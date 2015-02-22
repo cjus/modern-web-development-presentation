@@ -14,4 +14,6 @@ Feel free to fork the presentation and use it as the basis for sharing this with
 
 If you'd like to contribute to this presentation simply fork it and issue a pull request.
 
-### View the presentation here: [http://github.com/cjus/modern-web-development-presentation](http://github.com/cjus/modern-web-development-presentation)
+### View the presentation
+
+[http://cjus.github.io/modern-web-development-presentation](http://cjus.github.io/modern-web-development-presentation)
