@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Modern Web Development</title>
+  <meta name="description" content="Modern Web Development">
+  <meta name="author" content="Carlos Justiniano">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+  <link rel="stylesheet" href="css/presentation.css">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Title slide  -------------------------------------------------------------------->
+<section data-transition="cube" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/web-browsers.png">
+
+  <h2>Modern Web Development</h2>
+  <p>
+    <small>Presented by <a href="http://cjus.me">Carlos Justiniano</a> / <a href="http://twitter.com/cjus">@cjus</a> / ver: 0.1.0</small>
+  </p>
+  <aside class="notes" data-markdown="">
+    ---
+    > Before we begin, by a show of hands, how many people have used the following:
+
+    > A build tool such as Grunt or Gulp?
+
+    > A text editor such as Sublime, Brackets or Atom?
+
+    > How about an IDE such as Webstorm, Eclipse or Aptana?
+
+    > How many of you use a source control system such as Subversion, Git or Github?
+
+    > How about a library such as Backbone, Ember, Knockout or React?
+
+    > How about a framework such as AngularJS?
+
+    > Ok, how many of us have done unit testing using Jasmine, qUnit or Mocha?
+
+    > Any CoffeeScripters in the house?
+
+    > Anyone use ES6 features today?
+
+    > Hmmm ok, interesting. If you're not familar with any of terms I've just referenced we'll go over them in this presentation
+  </aside>
+</section>
+
+<!-- About this presentation -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>About this presentation</h3>
+  <ul>
+    <li>This is a 30,000 foot view</li>
+    <li>We may not cover your favorite tool</li>
+    <li>Our goal is to convey topic breath and not depth</li>
+  </ul>
+  <hr>
+  <small class="pre-bold pres-light-yellow-highlight">Latest presentation at: <a
+    href="http://github.com/cjus/AngularPresentation">http://github.com/cjus/ModernWebDevPresentation</a><br>
+    Issues with this presentation? Fix it and issue a pull request
+    </small>
+  <aside class="notes" data-markdown="">
+    ---
+    > We have a lot to cover so I won't be diving deep into specifics.
+
+    > And I may not cover your favorite tool.
+
+    > The goal of this presentation is to discuss web development and to consider what modern web devs are doing these days.
+
+    > You may find some of it useful in your own projects.
+
+    > In the spirit of modern web development this presentation is built entirely with HTML, CSS and JavaScript and works on your modern web browser and mobile devices.
+
+    > This presentation is also open source and available on Github.
+
+    > If you find any issue with this presentation drop me an email or better yet, issue a pull request.
+  </aside>
+</section>
+
+<!-- Less modern dev -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Less modern dev</h3>
+  <ul>
+    <li>Site built using a text editor and web browser</li>
+    <li>Some amount of jQuery</li>
+    <li>No use of a library such as Backbone or a framework such as AngularJS</li>
+    <li>Poor testing practices</li>
+    <li>Raw files deployed to webserver without packaging</li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    > In order to add context let's consider what is not considered modern web development
+
+    > Then we'll look at tools and processes which build on a basic foundation to create a more modern approach
+
+    > So, not too long ago sites were built using tools like Dreamweaver or basic text editors. The sites were essentially HTML, CSS and JavaScript with sprinklings of jQuery.
+
+    > Less modern sites don't use of a library or framework which would help to structure code for maintainability.
+
+    > Less modern sites don't include any unit testing of JavaScript code
+  </aside>
+</section>
+
+<!-- More modern dev -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>More modern dev</h3>
+  <ul>
+    <li>Seperation of concerns</li>
+    <li>Model, View, Controllers</li>
+    <li>Libraries and frameworks to add structure and improve maintainability</li>
+    <li>Tools, called linters, that help spot issues and support maintaining best practices</li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    > A good way to understand modern web development is to understand what problems it tries to solved
+
+    > So, not too long ago sites were built using tools like Dreamweaver or basic text editors. The sites were essentially HTML, CSS and JavaScript with sprinklings of jQuery.
+
+    > Web projects have become increasingly complex. A large web application might include dozens of programmers and an almost equal part of designers, user interface and experience experts, QA, product and project managers.
+
+    > Some web applications take an army to create and maintain.
+  </aside>
+</section>
+
+
+<!-- Modern web editors and IDEs -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Modern web editors and IDEs</h3>
+  <ul>
+    <li></li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    >
+  </aside>
+</section>
+
+<!-- Debugging in the browser -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Debugging in the browser</h3>
+  <ul>
+    <li></li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    >
+  </aside>
+</section>
+
+<!-- Preparing files for the web -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Preparing files for the web</h3>
+  <ul>
+    <li></li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    > minification
+    > concatination
+    > image processing (size reduction)
+  </aside>
+</section>
+
+<!-- Transpilers -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Transpilers</h3>
+  <ul>
+    <li></li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    > coffee script
+    > SASS
+    > ES6 to ES5
+  </aside>
+</section>
+
+<!-- This ain't your daddy's JavaScript -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>This ain't your daddy's JavaScript</h3>
+    <ul>
+      <li></li>
+    </ul>
+    <hr>
+    <aside class="notes" data-markdown="">
+      ---
+      >
+    </aside>
+  </section>
+
+  <!-- JavaScript, front to back and sideways -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>JavaScript, front to back and sideways</h3>
+    <ul>
+      <li>No longer only in the front-end</li>
+      <li>JavaScript run in the back-end on NodeJS</li>
+      <li>Also used to build database queries in CouchDB and CouchBase</li>
+      <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
+      <li>JS is also being used in Robotics, checkout Cylon.js and NodeBots</li>
+    </ul>
+    <hr>
+    <aside class="notes" data-markdown="">
+      ---
+      > JavaScript on the front end
+      > JS in the backend with NodeJS
+      > JS in a database with CouchDB, CouchBase
+      > JS with MongoDB and Redis
+      > JS in robotics
+    </aside>
+  </section>
+</section>
+
+
+<!-- Tips for leveling up  -------------------------------------------------------------------->
+<section data-transition="cube" data-transition-speed="medium">
+  <section data-transition="linear" data-transition-speed="medium">
+    <h2>Tips for leveling up</h2>
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+  <!-- Learn JavaScript  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Learn JavaScript</h3>
+  </section>
+
+  <!-- No really, Learn JavaScript!  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>No really, Learn JavaScript!</h3>
+    <ul>
+      <li>Still surpised by the "this" keyword?</li>
+      <li>Don't use prototype?</li>
+      <li>Don't understand type coercion?</li>
+      <li>Are you mostly using arrays and not using objects as data structures?</li>
+      <li>Don't understand hoisting?</li>
+      <li>Don't understand block vs function scoping?</li>
+      <li>Are you confused by clousures?</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+  <!-- Then you don't really know JavaScript  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Then you don't really know JavaScript</h3>
+    <img style="border: 0; padding: 20px;" src="images/You_Don_t_Know_JS_Kyle_Simpson.png">
+    <ul>
+      <li>Checkout Kyle Simpson's book series</li>
+    </ul>
+    <p>
+      <small>Bonus: Checkout Kyle's presentation deck for the 2013 HTML5 Developer Conference at
+        <a href="http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html">http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html</a>
+      </small>
+    </p>
+    <aside class="notes" data-markdown="">
+      ---
+      > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
+      > I remember being slighly offended by his acquisition.
+      > His talk, which lead to a series of books, was an eye openner.
+      > I recommend you check out his books and slide deck.
+    </aside>
+  </section>
+
+  <!-- Read the source Luke  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <img style="border: 0; padding: 20px;" src="images/read-the-source-luke.jpg">
+    <ul>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+  <!-- Read the source Luke  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <ul>
+      <li>View the source for annotated Backbone.js, underscore.js</li>
+      <li>http://backbonejs.org/docs/backbone.html</li>
+      <li>http://underscorejs.org/docs/underscore.html</li>
+      <li>Open up the jQuery source file and see if you can follow what's going on</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > Open up library code you use and try to understand what they're actually doing
+    </aside>
+  </section>
+
+
+  <!-- Because remember...  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Because remember...</h3>
+    <img style="border: 0; padding: 20px;" src="images/Carlos_Justiniano___cjus____Twitter.png">
+    <aside class="notes" data-markdown="">
+      ---
+      > Because remember, sometimes you have to read the code to compensate for a lack of good documentation.
+    </aside>
+  </section>
+
+  <!-- Learn to use your editor  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Learn to use your editor</h3>
+    <img style="border: 0; padding: 20px;" src="images/Atom.png">
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+  <!-- Improve your typing skills  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Improve your typing skills</h3>
+    <img style="border: 0; padding: 20px;" src="images/TypeTeach_US_and_New_Tab.png">
+    <aside class="notes" data-markdown="">
+      ---
+      > If you're looking for keys and poking your keyboard using to fingers you're not moving as fast as you could.
+
+      > Futhermore, and this is important, you're spending too much time thinking about typing when you should be thinking about your code.
+
+      > Music is only music when the sounds string together. Notes heard indivuduals are just sounds.
+    </aside>
+  </section>
+
+  <!-- Attend more meetups  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Attend more meetups</h3>
+    <img style="border: 0; padding: 20px;" src="images/hcjs_logo_01.png">
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+  <!-- keep calm and level up  -------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <img style="border: 0; padding: 20px;" src="images/keep-calm-and-level-up.png">
+    <aside class="notes" data-markdown="">
+      ---
+    </aside>
+  </section>
+
+
+
+</section>
+
+
+<!-- Contact -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="slow">
+  <h3>Contact</h3>
+  <ul>
+    <li>cjus on Twitter and Github</li>
+    <li>Email: cjus34@gmail.com</li>
+    <li>About: http://cjus.me</li>
+  </ul>
+  <hr>
+  <aside class="notes" data-markdown="">
+    ---
+    >
+  </aside>
+</section>
+
+
+
+
+</div>
+</div>
+
+
+
+
+<!-- reveal -->
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    //    parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    //    parallaxBackgroundSize: '2100px 900px',
+
+    leap: {
+      //gestureDelay: 1000,
+      //pointerTolerance: 40,
+      naturalSwipe: true,    // Invert swipe gestures
+      pointerOpacity: 0.25,      // Set pointer opacity to 0.5
+      pointerColor: '#FFFFFF' // color pointer
+    },
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      { src: 'lib/js/classList.js', condition: function() {
+        return !document.body.classList;
+      } },
+      { src: 'plugin/markdown/marked.js', condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      } },
+      { src: 'plugin/markdown/markdown.js', condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+        hljs.initHighlightingOnLoad();
+      } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() {
+        return !!document.body.classList;
+      } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() {
+        return !!document.body.classList;
+      } },
+      // { src: 'plugin/leap/leap-0.2.0.js', async: true }
+    ]
+  });
+
+  // Reveal.addEventListener('slidechanged', function(event) {
+  //   var notes = event.currentSlide.querySelector(".notes");
+  //   if (notes) {
+  //     console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
+  //   }
+  // });
+</script>
+</body>
+</html>
