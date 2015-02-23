@@ -36,6 +36,8 @@
 <div class="reveal">
 <div class="slides">
 
+<!-- To print: http://localhost:8000/?print-pdf/#/ -->
+
 <!-- Title slide  -------------------------------------------------------------------->
 <section data-transition="cube" data-transition-speed="medium">
   <img style="border: 0; padding: 20px;" src="images/web-browsers.png">
@@ -47,6 +49,8 @@
   <aside class="notes" data-markdown="">
     ---
     > Before we begin, by a show of hands, how many people have used the following:
+
+    > How many of you are using Bootstrap or Foundation?
 
     > A build tool such as Grunt or Gulp?
 
@@ -119,7 +123,8 @@
 
       > Monolithic source files with no real code organization: Today's tools support code organization and help to create maintainable web applications.
 
-      > No use of: Backbone, Ember, Knockout, React or Angular: Following our last point on code organization, there are lots of libraries and frameworks which help structure web projects. For non-trivial projects you really should be using one of them. Which you should use can be a subject of some heated debate.
+      > No use of: Backbone, Ember, Knockout, React or Angular:
+      > Following our last point on code organization, there are lots of libraries and frameworks which help structure web projects. For non-trivial projects you really should be using one of them. Which one you **should use** can be a subject of some heated debate.
     </aside>
   </section>
 
@@ -133,7 +138,7 @@
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      > Modern web devs use source control systems such as Git, even when working on a single personal project on their local machines.
+      > Source control systems are like intelligent backups for code.  Modern web devs use source control systems such as Git, even when working on a single personal project on their local machines.
 
       > Working on a project often requires a number of tasks which can be executed manually or automated. Modern web dev favors automation.
 
@@ -148,6 +153,9 @@
   <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
   <section data-transition="linear" data-transition-speed="medium">
     <h3>If you're not doing these things - then your dev cycles might feel a bit like this...</h3>
+    <aside class="notes" data-markdown="">
+      If you're not doing these things - then your dev cycles might feel a bit like this...
+    </aside>
   </section>
 
   <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
@@ -156,7 +164,9 @@
     <img style="border: 0; padding: 20px;" src="images/jane-stop-this-crazy-thing.jpg">
     <aside class="notes" data-markdown="">
       ---
-      > Modern web tools help add sanity to todays requirements by allowing devs to take control.
+      > Modern web tools help add sanity to today's requirements by allowing devs to take control.
+
+      >
     </aside>
   </section>
 
@@ -212,6 +222,8 @@
     > minification
     > concatination
     > image processing (size reduction)
+    > Bower
+    > Yomen
   </aside>
 </section>
 
@@ -225,7 +237,7 @@
     ---
     > coffee script
     > SASS
-    > ES6 to ES5
+    > ES6 to ES5 compiler like Babel or Traceur
   </aside>
 </section>
 
@@ -310,7 +322,7 @@
     <aside class="notes" data-markdown="">
       ---
       > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
-      > I remember being slighly offended by his acquisition.
+      > I remember being slighly offended by his accusation.
       > His talk, which lead to a series of books, was an eye openner.
       > I recommend you check out his books and slide deck.
     </aside>
@@ -323,6 +335,7 @@
     </ul>
     <aside class="notes" data-markdown="">
       ---
+      > Another great way to learn JavaScript is to read the source code for many popular libraries.
     </aside>
   </section>
 
@@ -337,6 +350,10 @@
     <aside class="notes" data-markdown="">
       ---
       > Open up library code you use and try to understand what they're actually doing
+
+      > Try to follow the code and spot anything that appears different or unsual.
+
+      > Ask others to help explain a section of code which might not be clear.
     </aside>
   </section>
 
@@ -462,7 +479,7 @@
       { src: 'plugin/notes/notes.js', async: true, condition: function() {
         return !!document.body.classList;
       } },
-      // { src: 'plugin/leap/leap-0.2.0.js', async: true }
+      //{ src: 'plugin/leap/leap-0.2.0.js', async: true }
     ]
   });
 
