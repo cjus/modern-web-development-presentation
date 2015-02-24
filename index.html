@@ -250,25 +250,35 @@
 </section>
 
 
-<!-- Tools of our trade -------------------------------------------------------------------------->
+<!-- Tools of the trade -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
 
   <section data-transition="linear" data-transition-speed="medium">
-    <h3>Tools of our trade</h3>
+    <h3>Tools of the trade</h3>
+    <img style="border: 0; padding: 20px;" src="images/tools-of-the-trade.jpg">
     <aside class="notes" data-markdown="">
       ---
-      >
+      > Lets discuss some of the tools available to web developers
     </aside>
   </section>
 
   <section data-transition="linear" data-transition-speed="medium">
     <h3>Modern web editors and IDEs</h3>
     <ul>
-      <li></li>
+      <li>Allow you to do more than just edit files</li>
+      <li>They include support for plugins which can integrate linters such as JSLint and JSHint to help you spot errors</li>
+      <li>They allow you to more quickly create HTML and CSS, checkout http://emmet.io/</li>
+      <li>Some even understand JavaScript syntax to allow you to more quickly navigate your source files</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      >
+      > A wikipedia page list over 75 text editors. Modern web editors differ from their older counterparts because by being designed to support developers working on web projects.
+
+      > A super popular editor is Sublime.  Webstorm is more of an Intergrated Developement Environment (IDE) than just an editor. Which you use depends on your needs.
+
+      > Recent free options include Brackets.io and Atom.
+
+      > A really cool point about Brackets and Atom is that they're actually written using HTML, CSS and JavaScript.  Talk about eating one's own dog food! I love it.
     </aside>
   </section>
 
@@ -276,11 +286,35 @@
   <section data-transition="linear" data-transition-speed="medium">
     <h3>Debugging in the browser</h3>
     <ul>
-      <li></li>
+      <li>Yes, you can use your web browser to debug your site.</li>
+      <li>Modern browsers include a suite of built-in tools</li>
+      <li>ProTip: Master those tools!</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      >
+      > OK, this one might be obvious, but not necessarily for people new to web development
+
+      > Modern web browsers have built-in tools which can be used to diagnose a wide varity of web related concerns.
+
+      > From the profiling of network calls to the debugging of program state using breakpoints
+
+      > If you only casually use those tools, then you may not getting the most out of them! Have a deeper look.
+    </aside>
+  </section>
+
+  <!-- Maintaining your app's dependencies -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Maintaining your app's dependencies</h3>
+    <ul>
+      <li>Modern web apps often include lots of package dependencies</li>
+      <li>From jQuery to Bootstrap to a libraries such as Ember or React</li>
+      <li>Tools exist to manage project dependencies. Get to know Bower - a package manager</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+     ---
+     > Modern web devs use dependency package managers such as Bower and NPM to manage their project dependencies.
+
+     > You basically list your dependencies in a configuration file so anyone team member can grab the project code and easily install required dependencies
     </aside>
   </section>
 
@@ -288,15 +322,20 @@
   <section data-transition="linear" data-transition-speed="medium">
     <h3>Preparing files for the web</h3>
     <ul>
-      <li></li>
+      <li>Get to know Grunt or Gulp</li>
+      <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
+      <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs, gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin, imagemin-pngcrush</li>
+      <li>$ gulp dist</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      > minification
-      > concatination
-      > image processing (size reduction)
-      > Bower
-      > Yomen
+      > We talked about Build tools such as Grunt and Gulp earlier.
+
+      > I use Grunt at work and Gulp personally.  My modern-web-seed project uses the plugins listed. From the names, you can probably guess what each does.
+
+      > The really cool thing is that most of those plugins run when I type gulp dist.
+
+      > This is serious automation and a major time saver during development
     </aside>
   </section>
 
@@ -304,15 +343,26 @@
   <section data-transition="linear" data-transition-speed="medium">
     <h3>Transpilers</h3>
     <ul>
-      <li></li>
+      <li>Tools that convert from one language to another</li>
+      <li>Typically for the purpose of extending or simplifing a language or using language features before they become widely available</li>
+      <li>Examples: CoffeeScript, SASS/Compass, ES6 to ES5 transpilers</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      > coffee script
-      > SASS
-      > ES6 to ES5 compiler like Babel or Traceur
+      > Transpilers are tools that convert from one language to another. Typically for the purpose of extending a language or using language features before they become widely available.
+
+      > Examples include:
+
+      > CoffeeScript, a transpiler that simplifies JavaScript for Ruby developers terrified of actually learning JavaScript.  Ok cheap shot.
+
+      > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build processs.
+
+      > Ex: ES6 to ES5 transpiler, allows devs to use new ES6 JavaScript features by transpiling them to the ES5 that modern browsers understand.
     </aside>
   </section>
+
+
+
 </section>
 
 <!-- This ain't your daddy's JavaScript -------------------------------------------------------------------------->
@@ -333,7 +383,7 @@
     <h3>JavaScript, front to back and sideways</h3>
     <ul>
       <li>No longer only in the front-end</li>
-      <li>JavaScript run in the back-end on NodeJS</li>
+      <li>JavaScript running in the back-end on NodeJS</li>
       <li>Also used to build database queries in CouchDB and CouchBase</li>
       <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
       <li>JS is also being used in Robotics, checkout Cylon.js and NodeBots</li>
@@ -430,7 +480,6 @@
       > Ask others to help explain a section of code which might not be clear.
     </aside>
   </section>
-
 
   <!-- Because remember...  -------------------------------------------------------------------->
   <section data-transition="linear" data-transition-speed="medium">
