@@ -70,7 +70,7 @@
 
     > Anyone use ES6 features today?
 
-    > Hmmm ok, interesting. If you're not familar with any of terms I've just referenced we'll go over them in this presentation
+    > Hmmm ok, interesting. If you're not familiar with any of terms I've just referenced we'll go over them in this presentation
   </aside>
 </section>
 
@@ -107,47 +107,62 @@
 
 <!-- Not so modern web dev -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
+
   <section data-transition="linear" data-transition-speed="medium">
-    <h3>Not so modern web dev</h3>
+    <h3>What is modern web development?</h3>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>In short, it's about working smarter and not harder...</h3>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>And how do we do that?</h3>
     <ul>
-      <li>Sites built using a generic text editor</li>
-      <li>Raw files deployed to webserver without packaging</li>
-      <li>One or few monolithic source files with no real code organization</li>
-      <li>No use of: Backbone, Ember, Knockout, React or Angular</li>
+      <li>Leverage existing tools, libraries and frameworks</li>
+      <li>Embrace best practices</li>
+      <li>Attend meetups and conferences, or watch them on YouTube</li>
+      <li>Checkout online training sites such as Lynda.com, Tuts+, CodeSchool and podcasts such as the JavaScript Jabber show</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      > Today we have specialized text editors which understand JavaScript syntax and provide a host of features for working with web content. Most modern editors support plugins which can help spot common errors. If you're using a lame editor you may be missing out! More about this later.
+      > During the past five years there has been an explosive growth of tools.
 
-      > Raw files deployed to webserver without packaging: This isn't something you have to do, but for larger projects it can make a really big difference by reducing site load times.
+      > New tools are appearing at a dizzying rate.
 
-      > Monolithic source files with no real code organization: Today's tools support code organization and help to create maintainable web applications.
+      > If you follow this stuff you know what I mean. It's impossible to really keep up with it all.
 
-      > No use of: Backbone, Ember, Knockout, React or Angular:
-      > Following our last point on code organization, there are lots of libraries and frameworks which help structure web projects. For non-trivial projects you really should be using one of them. Which one you **should use** can be a subject of some heated debate.
+      > Still, you need to keep an eye on new development and learn just enough to decide whether it's something you should care about.
+
+      > The Web development community has really grown up.  Not only is it on par with native development, in someways it's leading.  There is an order of magnitude more going on in the Web and JavaScript community than in any other language or platform.
+
+      > Great ways to stay on top of modern web dev is to embrace tools and best practices.  Also engage the community by attending meetups and conferences.
+
+      > Don't forget the web is your friend. Checkout the great training sites available.
+
+      > Sure some of them charge 20 bucks or more per month.  But seriously, it's a small price to invest in your career.
     </aside>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Signs you may not doing modern web development</h3>
+    <h4>If you or your team...</h4>
+    <ul>
+      <li>build and edit source files using a generic text editor</li>
+      <li>deploy raw files to webservers without packaging</li>
+      <li>work in monolithic source files with no real code organization</li>
+      <li>don't use a library or framework such as: Backbone, Ember, Knockout, React or Angular</li>
+    </ul>
   </section>
 
   <!-- Not so modern web dev -------------------------------------------------------------------------->
   <section data-transition="linear" data-transition-speed="medium">
     <ul>
-      <li>No use of source control</li>
-      <li>Manual and repetitive processes to work with site files before and during deployment</li>
-      <li>No use of code linters, style checkers, or beautifiers</li>
-      <li>Little or no testing practices</li>
+      <li>don't have a need for source control - zip files work just fine</li>
+      <li>don't mind manual and repetitive processes as you work on your projects</li>
+      <li>don't use code linters, style checkers, or beautifiers</li>
+      <li>don't do any real testing</li>
     </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Source control systems are like intelligent backups for code.  Modern web devs use source control systems such as Git, even when working on a single personal project on their local machines.
-
-      > Working on a project often requires a number of tasks which can be executed manually or automated. Modern web dev favors automation.
-
-      > No use of code linters, style checkers, or beautifiers: Code quality matters! Don't leave this to chance or good will. Modern web devs use each of these tools, in best cases these tools run as part of background automation.
-
-      > Little or no testing: Modern web devs ensure their code includes tests. Remember, code is only theoretically complete without tests. By "complete" I mean complete relative to established requirements and requirements are the thing your tests confirm.
-
-      > As a precusor to the rest of our talk: Modern web devs accomplish more using tool automation and libraries and framework.  It's about applying leverage. Working smarter and not harder.
-    </aside>
   </section>
 
   <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
@@ -172,13 +187,85 @@
 
   <!-- How can modern practices help? -------------------------------------------------------------------------->
   <section data-transition="linear" data-transition-speed="medium">
-    <h3>How can modern practices help?</h3>
+    <h3>How can modern tools and practices help?</h3>
+  </section>
+
+  <!-- By providing you with better tools ----------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>By providing you with better tools</h3>
+  </section>
+
+  <!-- Text editor vs. IDE -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Text editor vs. IDE</h3>
     <ul>
-      <li>Improve code quality: try jshint, js-beautify, jscs</li>
-      <li>Optimize for production use: use concatination and minification</li>
-      <li>Need large projects scale in terms of developers: use a JS library or framework (ex: Backbone, React, or Angular)</li>
-      <li>Testing tools</li>
-      <li>Automation, automation, automation</li>
+      <li>A text editor lets you edit code</li>
+      <li>An Integrated Development Environment (IDE) complements its built-in text editor with a host of integrated tools</li>
+      <li>However, today's modern editors feel like lightweight IDEs</li>
+      <li>It's not aways easy to decide which one is best for you</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      >
+    </aside>
+  </section>
+
+  <!-- Editor image -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <img style="border: 0; padding: 20px;" src="images/editor-missing-aside.png">
+    <ul>
+      <li>This is an IDE called WebStorm</li>
+      <li>The panel on the left shows a project file structure</li>
+      <li>Bars at the top contain quick access features and navigation helpers</li>
+      <li>The panel on the right shows a text view. The red line in front of the closing section tag shows us an error</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > Here's a screen shot of a web development IDE called WebStorm.
+
+      > We can see that our window view consists of panels.
+
+      > Each panels serves a distinct purpose.
+
+      > At the top of the window we see quick access features and navigation helpers.  Notice how we can see that we're looking at the section tag which is inside of a div with a class name of slides which is inside of a div with a class name of reveal. We can also click on those tags to quickly navigate the html document.
+
+      > The panel on the left shows a project file structure, while the panel on the right shows our source file.
+
+      > Notice the red squiggly line just before the closing section tag. This indicates and error which the IDE found for us.  If we hover our mouse cursor over the red line we'd that the cause of the error is a missing a closing aside tag.
+
+      > So that's a small example of a tool that can make your job easier.
+    </aside>
+  </section>
+
+
+  <!-- Lots of great editors to choose from  ------------------------------------------------------------------>
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>There are lots of great code editors to choose from!</h3>
+    <ul>
+      <li>Sublime ($70): http://www.sublimetext.com/</li>
+      <li>WebStorm ($99): https://www.jetbrains.com/webstorm/</li>
+      <li>Atom ($0): https://atom.io/</li>
+      <li>Brackets ($0): http://brackets.io/</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > This is a list of popular options, but by no means a comprehensive list.
+
+      > Both Sublime and Webstorm are commercial, but Atom and Brackets are both free.  Don't let the cost fool you. You'd be surprised by what both Atom and Brackets can do.
+
+      > One fun fact about Atom and Brackets is that they're actually built using HTML, CSS and JavaScript - which really speaks to the power of modern web technologies.
+    </aside>
+  </section>
+
+
+  <!-- Improving code quality and reducing errors ---------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Improving code quality and reducing errors</h3>
+    <ul>
+      <li>Use JSHint: http://jshint.com/</li>
+      <li>Use js-beautify: https://github.com/beautify-web/js-beautify</li>
+      <li>Use JSCS (JavaScript Code Style): https://www.npmjs.com/package/jscs</li>
+      <li>Good news: your (modern) text editor might already support plugins for these tools</li>
     </ul>
 
     <aside class="notes" data-markdown="">
@@ -187,46 +274,103 @@
 
       > Modern devs understand that through code reviews are time consuming and policing code is a thankless job. You just end up pissing off your fellow devs.
 
-      > That's why successful devs use tools like jshint or jslint (to spot errors and questional practices).
+      > That's why successful devs use tools like jshint or jslint (to spot errors and questionable practices).
 
-      > They also use tools like js-beautify to fix code that's not properly formated and JSCS (The Javascript code style checker) to ensure that code maintains an agreed upon look and feel.
+      > They also use tools like js-beautify to fix code that's not properly formatted and JSCS (The Javascript code style checker) to ensure that code maintains an agreed upon look and feel.
 
-      > Improving site performance can lead to a competive advantage as customers prefer your site instead of your competitors.
+      > The good news is that many editors, (especially the four we looked at) include support for these tools.
+    </aside>
+  </section>
 
-      > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales per year.
+  <!-- Use a JavaScript framework ---------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Use JavaScript libraries and frameworks</h3>
+    <img style="border: 0; padding: 20px;" src="images/frameworks.jpg">
+  </section>
 
-      > Google determined that if its search results were four tenths of a second slower they could lose 8 million searches per day.  The result of which would be millions fewer online ads.
+  <!-- Use a JavaScript framework ---------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>JavaScript libraries and frameworks</h3>
+    <ul>
+      <li>Lots to choose from</li>
+      <li>Adds structure to your application</li>
+      <li>Helps improve maintainability and testing</li>
+      <li>Offers battle harden code</li>
+      <li>Dictates how module will be built</li>
+    </ul>
 
-      > Performance matters.
+    <aside class="notes" data-markdown="">
+      ---
+      > There are dozens to choose from. They each provide ways of helping you structure and build web projects.
 
-      > Optimizing a web application for production use involves intelligently packaging site files so that they take up less space and load faster.  This process involves tools called minifiers which translate file contents into smaller version by renaming code variable and doing things like removing white space characters.
+      > For non-trivial projects you really should be using one of them. Which one you **should use** can be a
+      subject of some heated debate.
+
+      > As a project increase in size, more devs end up touching the code. Worse though is that not all of the devs
+      end up sticking around.
+
+      > Quite often the original developers are long gone. This is why choosing a well-known library or framework
+      (which you didn't invent) can help when it comes time to hire new developers.
+
+      > So if you chose to use say Angular, you could hire or train developers to write code consistently with the rest
+      of the project. New team members then simply need to learn where files are stored and how the project is assembled
+      in order to get up to speed.
+
+      > Best of all they can use books and online training materials to get up to speed. Again, because you didn't
+      invent the framework there's a greater chance that you'll find a helping hand when you need it.
+
+      > JS frameworks help with a concept called "Seperation of concerns" by introducing other concepts such as Models,
+      Views, Controllers, Service, Routers and other good stuff.
+
+      > A key benefit is that they help add structure and help improve maintainability
+
+      > Another great benefit is that they provide you well tested and battle harden code which you didn't have to write yourself!
+    </aside>
+  </section>
+
+  <!-- Performance tools  ---------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Performance tools</h3>
+    <ul>
+      <li>Performance matters!</li>
+      <li>Optimize for production use: use concatination and minification</li>
+      <li>They're not just for JavaScript, minifiers exists for HTML, CSS and image files!</li>
+    </ul>
+
+    <aside class="notes" data-markdown="">
+      ---
+      > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
+      competitors.
+
+      > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
+      per year.
+
+      > Google determined that if its search results were four tenths of a second slower they could lose 8 million
+      searches per day. The result of which would be millions fewer online ads.
+
+      > Clearly, performance matters.
+
+      > Optimizing a web application for production use involves intelligently packaging site files so that they take up
+      less space and load faster. This process involves tools called minifiers which translate file contents into
+      smaller version by renaming code variable and doing things like removing white space characters.
 
       > Minifiers exists for HTML, CSS and JavaScript.
 
-      > There are also image minifiers which change the compression ratio on images to reduce their size without impacting quality in a noticiable manner.
+      > There are also image minifiers which change the compression ratio on images to reduce their size without
+      impacting quality in a noticeable manner.
 
       > If you're not using one of them, check them out!
-
-      > Now as a project increase in size, more devs end up touching the code. Worse though is that not all of the devs end up sticking around.
-
-      > So quite often the original developers are long gone. This is why choosing a well-known library or framework (which you didn't invent) can help add structure to your projects.
-
-      > JS frameworks help with a concerpt called "Seperation of concerns" by introducing other concepts such as Models, Views, Controllers, Service, Routers and other good stuff.</li>
-
-      > A key benifit is that they help add structure and help improve maintainability</li>
-
-      > So if you chose to use say Angular, you could hire or train developers to write code consistently with the rest of the project.  New team members then simply need to learn where files are stored and how the project is assembled in order to get up to speed.
-
-      > Best of all they can use books and online training materials to get up to speed. Again, because you didn't invent the framework there's a greater chance that you'll find a helping hand when you need it.
-
-      > Testing is traditionally an area where less is done than might be necessary.
-
-      > Modern devs know that they can write unit test to test logical portions of their code and they can write integration tests to test modules working together and functional tests to test features.
-
-      > All of this is great!  What could be better right?
-
-      > Well, it does get better - when all of this is gets automated.
     </aside>
+  </section>
+
+  <!-- Performance tools  ---------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Performance tools</h3>
+    <ul>
+      <li>Testing tools</li>
+      <li>Build tools</li>
+      <li>Automation, automation, automation</li>
+    </ul>
   </section>
 
   <!-- Bringing it all together -------------------------------------------------------------------------->
@@ -274,7 +418,7 @@
       ---
       > A wikipedia page list over 75 text editors. Modern web editors differ from their older counterparts because by being designed to support developers working on web projects.
 
-      > A super popular editor is Sublime.  Webstorm is more of an Intergrated Developement Environment (IDE) than just an editor. Which you use depends on your needs.
+      > A super popular editor is Sublime.  Webstorm is more of an Integrated Development Environment (IDE) than just an editor. Which you use depends on your needs.
 
       > Recent free options include Brackets.io and Atom.
 
@@ -615,3 +759,5 @@
 </script>
 </body>
 </html>
+
+
