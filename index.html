@@ -42,7 +42,7 @@
 <section data-transition="cube" data-transition-speed="medium">
   <img style="border: 0; padding: 20px;" src="images/web-browsers.png">
 
-  <h2>Modern Web Development</h2>
+  <h2>Modern Web Dev</h2>
   <p>
     <small>Presented by <a href="http://cjus.me">Carlos Justiniano</a> / <a href="http://twitter.com/cjus">@cjus</a> / ver: 0.1.0</small>
   </p>
@@ -79,8 +79,9 @@
   <h3>About this presentation</h3>
   <ul>
     <li>This is a 30,000 foot view</li>
-    <li>We may not cover your favorite tool</li>
-    <li>Our goal is to convey topic breath and not depth</li>
+    <li>The goal is to convey topic breath and not depth</li>
+    <li>We'll cover what modern web devs are doing</li>
+    <li>Along the way we'll also look at how web tech is finding it's way into non-web areas of technology</li>
   </ul>
   <hr>
   <small class="pre-bold pres-light-yellow-highlight">Presentation source at: <a
@@ -94,6 +95,8 @@
     > And I may not cover your favorite tool.
 
     > The goal of this presentation is to discuss web development and to consider what modern web devs are doing these days.
+
+    > Along the way we'll also look at how web tech is finding it's way into non-web areas of technology
 
     > You may find some of it useful in your own projects.
 
@@ -199,14 +202,25 @@
   <section data-transition="linear" data-transition-speed="medium">
     <h3>Text editor vs. IDE</h3>
     <ul>
-      <li>A text editor lets you edit code</li>
+      <li>Any text editor will let you edit code</li>
+      <li>A text editor designed with web dev in mind will do far more for you</li>
       <li>An Integrated Development Environment (IDE) complements its built-in text editor with a host of integrated tools</li>
       <li>However, today's modern editors feel like lightweight IDEs</li>
       <li>It's not aways easy to decide which one is best for you</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
-      >
+      > Any text editor will let you edit your code.
+
+      > However, a text editor designed for web development will let you do much more than just editing.
+
+      > At the opposite end of web friendly text editors are IDEs, Integrated Development Environments.  These tools typically integrate tools which extend what you can do within a common environment.  For some, such as yours truely, this can be a nice advantage. For example, text editors don't typically allow you to debug your code from within the editor - instead you do this outside of the editor. Where as, some IDEs allow you to debug right inside the IDE.
+
+      > It is worth noting that many of today's web dev text editors go beyond being basic text editors and also offer a fare amount of tool integration.
+
+      > It's definitely not easy to decide which one is best for you. Most devs simply use what the cools kids are using... what ever that might be this week.
+
+      > My tip for you is to compare the costs, and features and see which one best fits your needs. For me, webstorm offered the ability to debug node applications and that was and remains an important feature.
     </aside>
   </section>
 
@@ -238,6 +252,21 @@
   </section>
 
 
+  <!-- Editor image -------------------------------------------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h4>Debugging a NodeJS app</h4>
+    <img style="border: 0; padding: 20px;" src="images/webstorm-debug.png">
+    <aside class="notes" data-markdown="">
+      ---
+      > This is Webstorm again
+
+      > In this example I'm debugging a NodeJS app.
+
+      > The sever just received an HTTP request which I'm inspecting.
+    </aside>
+  </section>
+
+
   <!-- Lots of great editors to choose from  ------------------------------------------------------------------>
   <section data-transition="linear" data-transition-speed="medium">
     <h3>There are lots of great code editors to choose from!</h3>
@@ -246,6 +275,7 @@
       <li>WebStorm ($99): https://www.jetbrains.com/webstorm/</li>
       <li>Atom ($0): https://atom.io/</li>
       <li>Brackets ($0): http://brackets.io/</li>
+      <li>and many many more...</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
@@ -505,21 +535,21 @@
     </aside>
   </section>
 
-
-
 </section>
 
 <!-- This ain't your daddy's JavaScript -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
   <section data-transition="linear" data-transition-speed="medium">
-    <h3>This ain't your daddy's JavaScript</h3>
-    <ul>
-      <li></li>
-    </ul>
+    <h3>During the past five years the use of JavaScript has really exploded</h3>
     <aside class="notes" data-markdown="">
       ---
-      >
+      > If you haven't kept up with JavaScript you'd be surprised what you can do these days
     </aside>
+  </section>
+
+  <!-- These days JavaScript is kicking some ass ----------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <img style="border: 0; padding: 20px;" src="images/kickass.jpg">
   </section>
 
   <!-- JavaScript, front to back and sideways -------------------------------------------------------------------------->
@@ -530,7 +560,6 @@
       <li>JavaScript running in the back-end on NodeJS</li>
       <li>Also used to build database queries in CouchDB and CouchBase</li>
       <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
-      <li>JS is also being used in Robotics, checkout Cylon.js and NodeBots</li>
     </ul>
     <aside class="notes" data-markdown="">
       ---
@@ -538,9 +567,72 @@
       > JS in the backend with NodeJS
       > JS in a database with CouchDB, CouchBase
       > JS with MongoDB and Redis
-      > JS in robotics
     </aside>
   </section>
+
+  <!-- JavaScript in Robotics ----------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>JS in Robotics, checkout Cylon.js and NodeBots</h3>
+    <img style="border: 0; padding: 20px;" src="images/U-87-Cyber-Combat-Unit.jpg">
+    <ul>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > JS is also being used in Robotics, checkout Cylon.js and NodeBots
+    </aside>
+  </section>
+
+  <!-- JavaScript in Robotics ----------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>No really! JavaScript on a chip</h3>
+    <img style="border: 0; padding: 20px;" src="images/esprunio.jpg">
+    <br/>
+    <ul>
+      <li>Checkout: http://www.espruino.com</li>
+    </ul>
+    <aside class="notes" data-markdown="">
+      ---
+      > The nice thing about these guys is that they offer a large collection of modules from accelerometers to servo motors.
+    </aside>
+  </section>
+
+  <!-- JavaScript in Robotics ----------------------------------------->
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>Nodecopters!</h3>
+    <img style="border: 0; padding: 20px;" src="images/NodeCopter_Berlin_2012.png">
+    <h6>http://www.nodecopter.com</h6>
+    <h6>https://github.com/felixge/node-ar-drone</h6>
+    <aside class="notes" data-markdown="">
+      ---
+      > Here is an image of a Drone being controlled at NodeCopter Berlin in 2012.
+
+      > The project uses a node.js client for controlling Parrot AR Drone quad-copters.
+
+      > How cool is that?
+
+      > I had a chance to see that live at the 2013 JS.Everywhere conference in San Francisco
+    </aside>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>In Minority Report, Tom Cruise manipulated holographic screens by waving his hands in mid air</h3>
+    <img style="border: 0; padding: 20px;" src="images/minority-report.gif">
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>The LeapMotion Controller</h3>
+    <img style="border: 0; padding: 20px;" src="images/leap.jpg">
+    <h3>Programmable using JavaScript</h3>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <h3>In fact, the presentation you're watching now can be controlled using a LeapMotion device</h3>
+  </section>
+
+  <section data-transition="linear" data-transition-speed="medium">
+    <img style="border: 0; padding: 20px;" src="images/leapmotion-code.png">
+  </section>
+
 </section>
 
 
@@ -562,7 +654,7 @@
   <section data-transition="linear" data-transition-speed="medium">
     <h3>No really, Learn JavaScript!</h3>
     <ul>
-      <li>Still surpised by the "this" keyword?</li>
+      <li>Still surprised by the "this" keyword?</li>
       <li>Don't use prototype?</li>
       <li>Don't understand type coercion?</li>
       <li>Are you mostly using arrays and not using objects as data structures?</li>
@@ -590,8 +682,8 @@
     <aside class="notes" data-markdown="">
       ---
       > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
-      > I remember being slighly offended by his accusation.
-      > His talk, which lead to a series of books, was an eye openner.
+      > I remember being slightly offended by his accusation.
+      > His talk, which lead to a series of books, was an eye opener.
       > I recommend you check out his books and slide deck.
     </aside>
   </section>
@@ -652,9 +744,9 @@
       ---
       > If you're looking for keys and poking your keyboard using two fingers you're not moving as fast as you could.
 
-      > Futhermore, and this is important, you're spending too much time thinking about typing when you should be thinking about your code.
+      > Furthermore, and this is important, you're spending too much time thinking about typing when you should be thinking about your code.
 
-      > Music is only music when the sounds string together. Notes heard indivuduals are just sounds.
+      > Music is only music when the sounds string together. Notes heard individually are just sounds.
     </aside>
   </section>
 
@@ -695,8 +787,6 @@
 
 </div>
 </div>
-
-
 
 
 <!-- reveal -->
@@ -746,7 +836,7 @@
       { src: 'plugin/notes/notes.js', async: true, condition: function() {
         return !!document.body.classList;
       } },
-      //{ src: 'plugin/leap/leap-0.2.0.js', async: true }
+      { src: 'plugin/leap/leap-0.2.0.js', async: true }
     ]
   });
 
@@ -759,5 +849,3 @@
 </script>
 </body>
 </html>
-
-
