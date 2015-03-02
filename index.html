@@ -74,7 +74,7 @@
   </aside>
 </section>
 
-<!-- About this presentation -------------------------------------------------------------------------->
+<!-- About this presentation --------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
   <h3>About this presentation</h3>
   <ul>
@@ -108,675 +108,764 @@
   </aside>
 </section>
 
-<!-- Not so modern web dev -------------------------------------------------------------------------->
+<!-- What is modern web development? ------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>What is modern web development?</h3>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>In short, it's about working smarter and not harder...</h3>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>And how do we do that?</h3>
-    <ul>
-      <li>Leverage existing tools, libraries and frameworks</li>
-      <li>Embrace best practices</li>
-      <li>Attend meetups and conferences, or watch them on YouTube</li>
-      <li>Checkout online training sites such as Lynda.com, Tuts+, CodeSchool and podcasts such as the JavaScript Jabber show</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > During the past five years there has been an explosive growth of tools.
-
-      > New tools are appearing at a dizzying rate.
-
-      > If you follow this stuff you know what I mean. It's impossible to really keep up with it all.
-
-      > Still, you need to keep an eye on new development and learn just enough to decide whether it's something you should care about.
-
-      > The Web development community has really grown up.  Not only is it on par with native development, in someways it's leading.  There is an order of magnitude more going on in the Web and JavaScript community than in any other language or platform.
-
-      > Great ways to stay on top of modern web dev is to embrace tools and best practices.  Also engage the community by attending meetups and conferences.
-
-      > Don't forget the web is your friend. Checkout the great training sites available.
-
-      > Sure some of them charge 20 bucks or more per month.  But seriously, it's a small price to invest in your career.
-    </aside>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Signs you may not doing modern web development</h3>
-    <h4>If you or your team...</h4>
-    <ul>
-      <li>build and edit source files using a generic text editor</li>
-      <li>deploy raw files to webservers without packaging</li>
-      <li>work in monolithic source files with no real code organization</li>
-      <li>don't use a library or framework such as: Backbone, Ember, Knockout, React or Angular</li>
-    </ul>
-  </section>
-
-  <!-- Not so modern web dev -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <ul>
-      <li>don't have a need for source control - zip files work just fine</li>
-      <li>don't mind manual and repetitive processes as you work on your projects</li>
-      <li>don't use code linters, style checkers, or beautifiers</li>
-      <li>don't do any real testing</li>
-    </ul>
-  </section>
-
-  <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>If that describes your projects - then your dev cycles might feel a bit like this...</h3>
-    <aside class="notes" data-markdown="">
-      If that describes your projects - then your dev cycles might feel a bit like this...
-    </aside>
-  </section>
-
-  <!-- Jane! Stop this crazy thing! -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Jane! Stop this crazy thing!</h3>
-    <img style="border: 0; padding: 20px;" src="images/jane-stop-this-crazy-thing.jpg">
-    <aside class="notes" data-markdown="">
-      ---
-      > Modern web tools and practices help you take control of your dev cycles and add predictiability to your software releases.
-
-      > Let's take a closer look.
-    </aside>
-  </section>
-
-  <!-- How can modern practices help? -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>How can modern tools and practices help?</h3>
-  </section>
-
-  <!-- By providing you with better tools ----------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>By providing you with better tools</h3>
-  </section>
-
-  <!-- Text editor vs. IDE -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Text editor vs. IDE</h3>
-    <ul>
-      <li>Any text editor will let you edit code</li>
-      <li>A text editor designed with web dev in mind will do far more for you</li>
-      <li>An Integrated Development Environment (IDE) complements its built-in text editor with a host of integrated tools</li>
-      <li>However, today's modern editors feel like lightweight IDEs</li>
-      <li>It's not aways easy to decide which one is best for you</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Any text editor will let you edit your code.
-
-      > However, a text editor designed for web development will let you do much more than just editing.
-
-      > At the opposite end of web friendly text editors are IDEs, Integrated Development Environments.  These tools typically integrate tools which extend what you can do within a common environment.  For some, such as yours truely, this can be a nice advantage. For example, text editors don't typically allow you to debug your code from within the editor - instead you do this outside of the editor. Where as, some IDEs allow you to debug right inside the IDE.
-
-      > It is worth noting that many of today's web dev text editors go beyond being basic text editors and also offer a fare amount of tool integration.
-
-      > It's definitely not easy to decide which one is best for you. Most devs simply use what the cools kids are using... what ever that might be this week.
-
-      > My tip for you is to compare the costs, and features and see which one best fits your needs. For me, webstorm offered the ability to debug node applications and that was and remains an important feature.
-    </aside>
-  </section>
-
-  <!-- Editor image -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <img style="border: 0; padding: 20px;" src="images/editor-missing-aside.png">
-    <ul>
-      <li>This is an IDE called WebStorm</li>
-      <li>The panel on the left shows a project file structure</li>
-      <li>Bars at the top contain quick access features and navigation helpers</li>
-      <li>The panel on the right shows a text view. The red line in front of the closing section tag shows us an error</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Here's a screen shot of a web development IDE called WebStorm.
-
-      > We can see that our window view consists of panels.
-
-      > Each panels serves a distinct purpose.
-
-      > At the top of the window we see quick access features and navigation helpers.  Notice how we can see that we're looking at the section tag which is inside of a div with a class name of slides which is inside of a div with a class name of reveal. We can also click on those tags to quickly navigate the html document.
-
-      > The panel on the left shows a project file structure, while the panel on the right shows our source file.
-
-      > Notice the red squiggly line just before the closing section tag. This indicates and error which the IDE found for us.  If we hover our mouse cursor over the red line we'd that the cause of the error is a missing a closing aside tag.
-
-      > So that's a small example of a tool that can make your job easier.
-    </aside>
-  </section>
-
-
-  <!-- Editor image -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h4>Debugging a NodeJS app</h4>
-    <img style="border: 0; padding: 20px;" src="images/webstorm-debug.png">
-    <aside class="notes" data-markdown="">
-      ---
-      > This is Webstorm again
-
-      > In this example I'm debugging a NodeJS app.
-
-      > The sever just received an HTTP request which I'm inspecting.
-    </aside>
-  </section>
-
-
-  <!-- Lots of great editors to choose from  ------------------------------------------------------------------>
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>There are lots of great code editors to choose from!</h3>
-    <ul>
-      <li>Sublime ($70): http://www.sublimetext.com/</li>
-      <li>WebStorm ($99): https://www.jetbrains.com/webstorm/</li>
-      <li>Atom ($0): https://atom.io/</li>
-      <li>Brackets ($0): http://brackets.io/</li>
-      <li>and many many more...</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > This is a list of popular options, but by no means a comprehensive list.
-
-      > Both Sublime and Webstorm are commercial, but Atom and Brackets are both free.  Don't let the cost fool you. You'd be surprised by what both Atom and Brackets can do.
-
-      > One fun fact about Atom and Brackets is that they're actually built using HTML, CSS and JavaScript - which really speaks to the power of modern web technologies.
-    </aside>
-  </section>
-
-
-  <!-- Improving code quality and reducing errors ---------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Improving code quality and reducing errors</h3>
-    <ul>
-      <li>Use JSHint: http://jshint.com/</li>
-      <li>Use js-beautify: https://github.com/beautify-web/js-beautify</li>
-      <li>Use JSCS (JavaScript Code Style): https://www.npmjs.com/package/jscs</li>
-      <li>Good news: your (modern) text editor might already support plugins for these tools</li>
-    </ul>
-
-    <aside class="notes" data-markdown="">
-      ---
-      > One area that makes a huge difference is in code quality. The more error prone your code, the less likely it will meet customer needs.
-
-      > Modern devs understand that through code reviews are time consuming and policing code is a thankless job. You just end up pissing off your fellow devs.
-
-      > That's why successful devs use tools like jshint or jslint (to spot errors and questionable practices).
-
-      > They also use tools like js-beautify to fix code that's not properly formatted and JSCS (The Javascript code style checker) to ensure that code maintains an agreed upon look and feel.
-
-      > The good news is that many editors, (especially the four we looked at) include support for these tools.
-    </aside>
-  </section>
-
-  <!-- Use a JavaScript framework ---------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Use JavaScript libraries and frameworks</h3>
-    <img style="border: 0; padding: 20px;" src="images/frameworks.jpg">
-  </section>
-
-  <!-- Use a JavaScript framework ---------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>JavaScript libraries and frameworks</h3>
-    <ul>
-      <li>Lots to choose from</li>
-      <li>Adds structure to your application</li>
-      <li>Helps improve maintainability and testing</li>
-      <li>Offers battle harden code</li>
-      <li>Dictates how module will be built</li>
-    </ul>
-
-    <aside class="notes" data-markdown="">
-      ---
-      > There are dozens to choose from. They each provide ways of helping you structure and build web projects.
-
-      > For non-trivial projects you really should be using one of them. Which one you **should use** can be a
-      subject of some heated debate.
-
-      > As a project increase in size, more devs end up touching the code. Worse though is that not all of the devs
-      end up sticking around.
-
-      > Quite often the original developers are long gone. This is why choosing a well-known library or framework
-      (which you didn't invent) can help when it comes time to hire new developers.
-
-      > So if you chose to use say Angular, you could hire or train developers to write code consistently with the rest
-      of the project. New team members then simply need to learn where files are stored and how the project is assembled
-      in order to get up to speed.
-
-      > Best of all they can use books and online training materials to get up to speed. Again, because you didn't
-      invent the framework there's a greater chance that you'll find a helping hand when you need it.
-
-      > JS frameworks help with a concept called "Seperation of concerns" by introducing other concepts such as Models,
-      Views, Controllers, Service, Routers and other good stuff.
-
-      > A key benefit is that they help add structure and help improve maintainability
-
-      > Another great benefit is that they provide you well tested and battle harden code which you didn't have to write yourself!
-    </aside>
-  </section>
-
-  <!-- Performance tools  ---------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Performance tools</h3>
-    <ul>
-      <li>Performance matters!</li>
-      <li>Optimize for production use: use concatination and minification</li>
-      <li>They're not just for JavaScript, minifiers exists for HTML, CSS and image files!</li>
-    </ul>
-
-    <aside class="notes" data-markdown="">
-      ---
-      > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
-      competitors.
-
-      > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
-      per year.
-
-      > Google determined that if its search results were four tenths of a second slower they could lose 8 million
-      searches per day. The result of which would be millions fewer online ads.
-
-      > Clearly, performance matters.
-
-      > Optimizing a web application for production use involves intelligently packaging site files so that they take up
-      less space and load faster. This process involves tools called minifiers which translate file contents into
-      smaller version by renaming code variable and doing things like removing white space characters.
-
-      > Minifiers exists for HTML, CSS and JavaScript.
-
-      > There are also image minifiers which change the compression ratio on images to reduce their size without
-      impacting quality in a noticeable manner.
-
-      > If you're not using one of them, check them out!
-    </aside>
-  </section>
-
-  <!-- Performance tools  ---------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Performance tools</h3>
-    <ul>
-      <li>Testing tools</li>
-      <li>Build tools</li>
-      <li>Automation, automation, automation</li>
-    </ul>
-  </section>
-
-  <!-- Bringing it all together -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Bringing it all together</h3>
-    <ul>
-      <li>Use JS friendly build tools such as Grunt and Gulp</li>
-      <li>Both are build systems which include a massive collection of plugins for doing just about anything you need to in the life time of your project.</li>
-      <li>They can help you do everything we've already discussed and things like pushing your code to cloud services such as Amazon and Heroku and your assets to content delivery networks.</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > So everything that we've discussed so far fits neatly under the unbrella of a build system such as Grunt or Gulp.
-
-      > They each feature a massive library of plugins for things like automtically checking your JavaScript for correctness, running tests scripts, packaging your projects and deploying them to the the cloud and much much more.
-
-      > If you're not using these tools now, they should be in your future - set aside some time to get to know them.
-    </aside>
-  </section>
-
+  <h3>What is modern web development?</h3>
+</section>
+
+<!-- In short, it's about working smarter and not harder... -------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>In short, it's about working smarter and not harder...</h3>
+</section>
+
+<!-- Signs you may not be practicing modern web development -------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Signs you may not be practicing modern web development</h3>
+  <img style="border: 0; padding: 20px;" src="images/signs.jpg">
+</section>
+
+<!-- If you or your team... ---------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>If you or your team...</h3>
+  <ul>
+    <li>build and edit source files using a generic text editor</li>
+    <li>deploy raw files to webservers without packaging</li>
+    <li>work in monolithic source files with no real code organization</li>
+    <li>don't use a library or framework such as: Backbone, Ember, Knockout, React or Angular</li>
+  </ul>
+</section>
+
+<!-- Or if you or your team... ------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Or if you or your team...</h3>
+  <ul>
+    <li>don't have a need for source control - zip files work just fine</li>
+    <li>don't mind manual and repetitive processes as you work on your projects</li>
+    <li>don't use code linters, style checkers, or beautifiers</li>
+    <li>don't do any real testing</li>
+  </ul>
+</section>
+
+<!-- Jane! Stop this crazy thing! ---------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>If that describes your projects - then your dev cycles might feel a bit like this...</h3>
+  <aside class="notes" data-markdown="">
+    If that describes your projects - then your dev cycles might feel a bit like this...
+  </aside>
+</section>
+
+<!-- Jane! Stop this crazy thing! ------------------------------------------------------>
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Jane! Stop this crazy thing!</h3>
+  <img style="border: 0; padding: 20px;" src="images/jane-stop-this-crazy-thing.jpg">
+  <aside class="notes" data-markdown="">
+    ---
+    > Modern web tools and practices help you take control of your dev cycles and add predictability to your software
+    releases.
+
+    > Let's take a closer look.
+  </aside>
+</section>
+
+<!-- How can modern practices help? ----------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>How can modern tools and practices help?</h3>
+</section>
+
+<!-- By providing you with better tools ------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>By providing you with better tools</h3>
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Tools of the trade</h3>
+  <img style="border: 0; padding: 20px;" src="images/tools-of-the-trade.jpg">
+  <aside class="notes" data-markdown="">
+    ---
+    > Lets discuss some of the tools available to web developers
+  </aside>
+</section>
+
+<!-- Text editor vs. IDE ---------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Text editor vs. IDE</h3>
+  <ul>
+    <li>Any text editor will let you edit code</li>
+    <li>A text editor designed with web dev in mind will do far more for you</li>
+    <li>An Integrated Development Environment (IDE) complements its built-in text editor with a host of integrated
+      tools
+    </li>
+    <li>However, today's modern editors feel like lightweight IDEs</li>
+    <li>It's not aways easy to decide which one is best for you</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Any text editor will let you edit your code.
+
+    > However, a text editor designed for web development will let you do much more than just editing.
+
+    > At the opposite end of web friendly text editors are IDEs, Integrated Development Environments. These tools
+    typically integrate tools which extend what you can do within a common environment. For some, such as yours
+    truely, this can be a nice advantage. For example, text editors don't typically allow you to debug your code from
+    within the editor - instead you do this outside of the editor. Where as, some IDEs allow you to debug right inside
+    the IDE.
+
+    > It is worth noting that many of today's web dev text editors go beyond being basic text editors and also offer a
+    fare amount of tool integration.
+
+    > It's definitely not easy to decide which one is best for you. Most devs simply use what the cools kids are
+    using... what ever that might be this week.
+
+    > My tip for you is to compare the costs, and features and see which one best fits your needs. For me, webstorm
+    offered the ability to debug node applications and that was and remains an important feature.
+  </aside>
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Modern web editors and IDEs</h3>
+  <ul>
+    <li>Allow you to do more than just edit files</li>
+    <li>They include support for plugins which can integrate linters such as JSLint and JSHint to help you spot
+      errors
+    </li>
+    <li>They allow you to more quickly create HTML and CSS, checkout http://emmet.io/</li>
+    <li>Some even understand JavaScript syntax to allow you to more quickly navigate your source files</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > A wikipedia page list over 75 text editors. Modern web editors differ from their older counterparts because by
+    being designed to support developers working on web projects.
+
+    > A super popular editor is Sublime. Webstorm is more of an Integrated Development Environment (IDE) than just an
+    editor. Which you use depends on your needs.
+
+    > Recent free options include Brackets.io and Atom.
+
+    > A really cool point about Brackets and Atom is that they're actually written using HTML, CSS and JavaScript.
+    Talk about eating one's own dog food! I love it.
+  </aside>
+</section>
+
+<!-- Editor image -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/editor-missing-aside.png">
+  <ul>
+    <li>This is an IDE called WebStorm</li>
+    <li>The panel on the left shows a project file structure</li>
+    <li>Bars at the top contain quick access features and navigation helpers</li>
+    <li>The panel on the right shows a text view. The red line in front of the closing section tag shows us an error
+    </li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Here's a screen shot of a web development IDE called WebStorm.
+
+    > We can see that our window view consists of panels.
+
+    > Each panels serves a distinct purpose.
+
+    > At the top of the window we see quick access features and navigation helpers. Notice how we can see that we're
+    looking at the section tag which is inside of a div with a class name of slides which is inside of a div with a
+    class name of reveal. We can also click on those tags to quickly navigate the html document.
+
+    > The panel on the left shows a project file structure, while the panel on the right shows our source file.
+
+    > Notice the red squiggly line just before the closing section tag. This indicates and error which the IDE found
+    for us. If we hover our mouse cursor over the red line we'd that the cause of the error is a missing a closing
+    aside tag.
+
+    > So that's a small example of a tool that can make your job easier.
+  </aside>
+</section>
+
+<!-- Editor image -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h4>Debugging a NodeJS app</h4>
+  <img style="border: 0; padding: 20px;" src="images/webstorm-debug.png">
+  <aside class="notes" data-markdown="">
+    ---
+    > This is Webstorm again
+
+    > In this example I'm debugging a NodeJS app.
+
+    > The sever just received an HTTP request which I'm inspecting.
+  </aside>
+</section>
+
+<!-- Lots of great editors to choose from  ------------------------------------------------------------------>
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>There are lots of great code editors to choose from!</h3>
+  <ul>
+    <li>Sublime ($70): http://www.sublimetext.com/</li>
+    <li>WebStorm ($99): https://www.jetbrains.com/webstorm/</li>
+    <li>Atom ($0): https://atom.io/</li>
+    <li>Brackets ($0): http://brackets.io/</li>
+    <li>and many many more...</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > This is a list of popular options, but by no means a comprehensive list.
+
+    > Both Sublime and Webstorm are commercial, but Atom and Brackets are both free. Don't let the cost fool you.
+    You'd be surprised by what both Atom and Brackets can do.
+
+    > One fun fact about Atom and Brackets is that they're actually built using HTML, CSS and JavaScript - which
+    really speaks to the power of modern web technologies.
+  </aside>
+</section>
+
+<!-- Debugging in the browser -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Debugging in the browser</h3>
+  <ul>
+    <li>Yes, you can use your web browser to debug your site.</li>
+    <li>Modern browsers include a suite of built-in tools</li>
+    <li>ProTip: Master those tools!</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > OK, this one might be obvious, but not necessarily for people new to web development
+
+    > Modern web browsers have built-in tools which can be used to diagnose a wide varity of web related concerns.
+
+    > From the profiling of network calls to the debugging of program state using breakpoints
+
+    > If you only casually use those tools, then you may not getting the most out of them! Have a deeper look.
+  </aside>
+</section>
+
+<!-- Maintaining your app's dependencies -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Maintaining your app's dependencies</h3>
+  <ul>
+    <li>Modern web apps often include lots of package dependencies</li>
+    <li>From jQuery to Bootstrap to a libraries such as Ember or React</li>
+    <li>Tools exist to manage project dependencies. Get to know Bower - a package manager</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Modern web devs use dependency package managers such as Bower and NPM to manage their project dependencies.
+
+    > You basically list your dependencies in a configuration file so anyone team member can grab the project code and
+    easily install required dependencies
+  </aside>
+</section>
+
+<!-- Preparing files for the web -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Preparing files for the web</h3>
+  <ul>
+    <li>Get to know Grunt or Gulp</li>
+    <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
+    <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs,
+      gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin,
+      imagemin-pngcrush
+    </li>
+    <li>$ gulp dist</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > We talked about Build tools such as Grunt and Gulp earlier.
+
+    > I use Grunt at work and Gulp personally. My modern-web-seed project uses the plugins listed. From the names, you
+    can probably guess what each one does.
+
+    > The really cool thing is that most of those plugins run when I type gulp dist.
+
+    > This is serious automation and a major time saver during development
+  </aside>
+</section>
+
+<!-- Get with Git  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Get with Git</h3>
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- Join GitHub  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Join GitHub</h3>
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- Transpilers -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Transpilers</h3>
+  <ul>
+    <li>Tools that convert from one language to another</li>
+    <li>Typically for the purpose of extending or simplifing a language or using language features before they become
+      widely available
+    </li>
+    <li>Examples: CoffeeScript, SASS/Compass, ES6 to ES5 transpilers</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Transpilers are tools that convert from one language to another. Typically for the purpose of extending a
+    language or using language features before they become widely available.
+
+    > Examples include:
+
+    > CoffeeScript, a transpiler that simplifies JavaScript for Ruby developers terrified of actually learning
+    JavaScript. Ok cheap shot.
+
+    > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build processs.
+
+    > Ex: ES6 to ES5 transpiler, allows devs to use new ES6 JavaScript features by transpiling them to the ES5 that
+    modern browsers understand.
+  </aside>
 </section>
 
 
-<!-- Tools of the trade -------------------------------------------------------------------------->
+<!-- Improving code quality and reducing errors ---------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
+  <h3>Improving code quality and reducing errors</h3>
+  <ul>
+    <li>Use JSHint: http://jshint.com/</li>
+    <li>Use js-beautify: https://github.com/beautify-web/js-beautify</li>
+    <li>Use JSCS (JavaScript Code Style): https://www.npmjs.com/package/jscs</li>
+    <li>Good news: your (modern) text editor might already support plugins for these tools</li>
+  </ul>
 
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Tools of the trade</h3>
-    <img style="border: 0; padding: 20px;" src="images/tools-of-the-trade.jpg">
-    <aside class="notes" data-markdown="">
-      ---
-      > Lets discuss some of the tools available to web developers
-    </aside>
-  </section>
+  <aside class="notes" data-markdown="">
+    ---
+    > One area that makes a huge difference is in code quality. The more error prone your code, the less likely it
+    will meet customer needs.
 
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Modern web editors and IDEs</h3>
-    <ul>
-      <li>Allow you to do more than just edit files</li>
-      <li>They include support for plugins which can integrate linters such as JSLint and JSHint to help you spot errors</li>
-      <li>They allow you to more quickly create HTML and CSS, checkout http://emmet.io/</li>
-      <li>Some even understand JavaScript syntax to allow you to more quickly navigate your source files</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > A wikipedia page list over 75 text editors. Modern web editors differ from their older counterparts because by being designed to support developers working on web projects.
+    > Modern devs understand that through code reviews are time consuming and policing code is a thankless job. You
+    just end up pissing off your fellow devs.
 
-      > A super popular editor is Sublime.  Webstorm is more of an Integrated Development Environment (IDE) than just an editor. Which you use depends on your needs.
+    > That's why successful devs use tools like jshint or jslint (to spot errors and questionable practices).
 
-      > Recent free options include Brackets.io and Atom.
+    > They also use tools like js-beautify to fix code that's not properly formatted and JSCS (The Javascript code
+    style checker) to ensure that code maintains an agreed upon look and feel.
 
-      > A really cool point about Brackets and Atom is that they're actually written using HTML, CSS and JavaScript.  Talk about eating one's own dog food! I love it.
-    </aside>
-  </section>
-
-  <!-- Debugging in the browser -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Debugging in the browser</h3>
-    <ul>
-      <li>Yes, you can use your web browser to debug your site.</li>
-      <li>Modern browsers include a suite of built-in tools</li>
-      <li>ProTip: Master those tools!</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > OK, this one might be obvious, but not necessarily for people new to web development
-
-      > Modern web browsers have built-in tools which can be used to diagnose a wide varity of web related concerns.
-
-      > From the profiling of network calls to the debugging of program state using breakpoints
-
-      > If you only casually use those tools, then you may not getting the most out of them! Have a deeper look.
-    </aside>
-  </section>
-
-  <!-- Maintaining your app's dependencies -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Maintaining your app's dependencies</h3>
-    <ul>
-      <li>Modern web apps often include lots of package dependencies</li>
-      <li>From jQuery to Bootstrap to a libraries such as Ember or React</li>
-      <li>Tools exist to manage project dependencies. Get to know Bower - a package manager</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-     ---
-     > Modern web devs use dependency package managers such as Bower and NPM to manage their project dependencies.
-
-     > You basically list your dependencies in a configuration file so anyone team member can grab the project code and easily install required dependencies
-    </aside>
-  </section>
-
-  <!-- Preparing files for the web -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Preparing files for the web</h3>
-    <ul>
-      <li>Get to know Grunt or Gulp</li>
-      <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
-      <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs, gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin, imagemin-pngcrush</li>
-      <li>$ gulp dist</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > We talked about Build tools such as Grunt and Gulp earlier.
-
-      > I use Grunt at work and Gulp personally.  My modern-web-seed project uses the plugins listed. From the names, you can probably guess what each one does.
-
-      > The really cool thing is that most of those plugins run when I type gulp dist.
-
-      > This is serious automation and a major time saver during development
-    </aside>
-  </section>
-
-  <!-- Get with Git  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Get with Git</h3>
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
-
-  <!-- Join GitHub  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Join GitHub</h3>
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
-
-  <!-- Transpilers -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Transpilers</h3>
-    <ul>
-      <li>Tools that convert from one language to another</li>
-      <li>Typically for the purpose of extending or simplifing a language or using language features before they become widely available</li>
-      <li>Examples: CoffeeScript, SASS/Compass, ES6 to ES5 transpilers</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Transpilers are tools that convert from one language to another. Typically for the purpose of extending a language or using language features before they become widely available.
-
-      > Examples include:
-
-      > CoffeeScript, a transpiler that simplifies JavaScript for Ruby developers terrified of actually learning JavaScript.  Ok cheap shot.
-
-      > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build processs.
-
-      > Ex: ES6 to ES5 transpiler, allows devs to use new ES6 JavaScript features by transpiling them to the ES5 that modern browsers understand.
-    </aside>
-  </section>
-
+    > The good news is that many editors, (especially the four we looked at) include support for these tools.
+  </aside>
 </section>
+
+<!-- Use a JavaScript framework ---------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Use JavaScript libraries and frameworks</h3>
+  <img style="border: 0; padding: 20px;" src="images/frameworks.jpg">
+</section>
+
+<!-- Use a JavaScript framework ---------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>JavaScript libraries and frameworks</h3>
+  <ul>
+    <li>Lots to choose from</li>
+    <li>Adds structure to your application</li>
+    <li>Helps improve maintainability and testing</li>
+    <li>Offers battle harden code</li>
+    <li>Dictates how module will be built</li>
+  </ul>
+
+  <aside class="notes" data-markdown="">
+    ---
+    > There are dozens to choose from. They each provide ways of helping you structure and build web projects.
+
+    > For non-trivial projects you really should be using one of them. Which one you **should use** can be a
+    subject of some heated debate.
+
+    > As a project increase in size, more devs end up touching the code. Worse though is that not all of the devs
+    end up sticking around.
+
+    > Quite often the original developers are long gone. This is why choosing a well-known library or framework
+    (which you didn't invent) can help when it comes time to hire new developers.
+
+    > So if you chose to use say Angular, you could hire or train developers to write code consistently with the rest
+    of the project. New team members then simply need to learn where files are stored and how the project is assembled
+    in order to get up to speed.
+
+    > Best of all they can use books and online training materials to get up to speed. Again, because you didn't
+    invent the framework there's a greater chance that you'll find a helping hand when you need it.
+
+    > JS frameworks help with a concept called "Seperation of concerns" by introducing other concepts such as Models,
+    Views, Controllers, Service, Routers and other good stuff.
+
+    > A key benefit is that they help add structure and help improve maintainability
+
+    > Another great benefit is that they provide you well tested and battle harden code which you didn't have to write
+    yourself!
+  </aside>
+</section>
+
+<!-- Performance tools  ---------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Performance tools</h3>
+  <ul>
+    <li>Performance matters!</li>
+    <li>Optimize for production use: use concatination and minification</li>
+    <li>They're not just for JavaScript, minifiers exists for HTML, CSS and image files!</li>
+  </ul>
+
+  <aside class="notes" data-markdown="">
+    ---
+    > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
+    competitors.
+
+    > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
+    per year.
+
+    > Google determined that if its search results were four tenths of a second slower they could lose 8 million
+    searches per day. The result of which would be millions fewer online ads.
+
+    > Clearly, performance matters.
+
+    > Optimizing a web application for production use involves intelligently packaging site files so that they take up
+    less space and load faster. This process involves tools called minifiers which translate file contents into
+    smaller version by renaming code variable and doing things like removing white space characters.
+
+    > Minifiers exists for HTML, CSS and JavaScript.
+
+    > There are also image minifiers which change the compression ratio on images to reduce their size without
+    impacting quality in a noticeable manner.
+
+    > If you're not using one of them, check them out!
+  </aside>
+</section>
+
+<!-- Performance tools  ---------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Performance tools</h3>
+  <ul>
+    <li>Testing tools</li>
+    <li>Build tools</li>
+    <li>Automation, automation, automation</li>
+  </ul>
+</section>
+
+<!-- Bringing it all together -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Bringing it all together</h3>
+</section>
+
+<!-- Use a build tool -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Use a build tool</h3>
+  <ul>
+    <li>Use JS friendly build tools such as Grunt and Gulp</li>
+    <li>Both are build systems which include a massive collection of plugins for doing just about anything you need to
+      in the life time of your project.
+    </li>
+    <li>They can help you do everything we've already discussed and things like pushing your code to cloud services
+      such as Amazon and Heroku and your assets to content delivery networks.
+    </li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > So everything that we've discussed so far fits neatly under the umbrella of a build system such as Grunt or
+    Gulp.
+
+    > They each feature a massive library of plugins for things like automatically checking your JavaScript for
+    correctness, running tests scripts, packaging your projects and deploying them to the the cloud and much much
+    more.
+
+    > If you're not using these tools now, they should be in your future - set aside some time to get to know them.
+  </aside>
+</section>
+
+
+<!-- Preparing files for the web -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Preparing files for the web</h3>
+  <ul>
+    <li>Get to know Grunt or Gulp</li>
+    <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
+    <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs,
+      gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin,
+      imagemin-pngcrush
+    </li>
+    <li>$ gulp dist</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > We talked about Build tools such as Grunt and Gulp earlier.
+
+    > I use Grunt at work and Gulp personally. My modern-web-seed project uses the plugins listed. From the names, you
+    can probably guess what each one does.
+
+    > The really cool thing is that most of those plugins run when I type gulp dist.
+
+    > This is serious automation and a major time saver during development
+  </aside>
+</section>
+
 
 <!-- This ain't your daddy's JavaScript -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="medium">
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>During the past five years the use of JavaScript has really exploded</h3>
-    <aside class="notes" data-markdown="">
-      ---
-      > If you haven't kept up with JavaScript you'd be surprised what you can do these days
-    </aside>
-  </section>
-
-  <!-- These days JavaScript is kicking some ass ----------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <img style="border: 0; padding: 20px;" src="images/kickass.jpg">
-  </section>
-
-  <!-- JavaScript, front to back and sideways -------------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>JS front to back and sideways</h3>
-    <ul>
-      <li>No longer only in the front-end</li>
-      <li>JavaScript running in the back-end on NodeJS</li>
-      <li>Also used to build database queries in CouchDB and CouchBase</li>
-      <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > JavaScript on the front end
-      > JS in the backend with NodeJS
-      > JS in a database with CouchDB, CouchBase
-      > JS with MongoDB and Redis
-    </aside>
-  </section>
-
-  <!-- JavaScript in Robotics ----------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>JS in Robotics, checkout Cylon.js and NodeBots</h3>
-    <img style="border: 0; padding: 20px;" src="images/U-87-Cyber-Combat-Unit.jpg">
-    <ul>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > JS is also being used in Robotics, checkout Cylon.js and NodeBots
-    </aside>
-  </section>
-
-  <!-- JavaScript in Robotics ----------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>No really! JavaScript on a chip</h3>
-    <img style="border: 0; padding: 20px;" src="images/esprunio.jpg">
-    <br/>
-    <ul>
-      <li>Checkout: http://www.espruino.com</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > The nice thing about these guys is that they offer a large collection of modules from accelerometers to servo motors.
-    </aside>
-  </section>
-
-  <!-- JavaScript in Robotics ----------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Nodecopters!</h3>
-    <img style="border: 0; padding: 20px;" src="images/NodeCopter_Berlin_2012.png">
-    <h6>http://www.nodecopter.com</h6>
-    <h6>https://github.com/felixge/node-ar-drone</h6>
-    <aside class="notes" data-markdown="">
-      ---
-      > Here is an image of a Drone being controlled at NodeCopter Berlin in 2012.
-
-      > The project uses a node.js client for controlling Parrot AR Drone quad-copters.
-
-      > How cool is that?
-
-      > I had a chance to see that live at the 2013 JS.Everywhere conference in San Francisco
-    </aside>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>In Minority Report, Tom Cruise manipulated holographic screens by waving his hands in mid air</h3>
-    <img style="border: 0; padding: 20px;" src="images/minority-report.gif">
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>The LeapMotion Controller</h3>
-    <img style="border: 0; padding: 20px;" src="images/leap.jpg">
-    <h3>Programmable using JavaScript</h3>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>In fact, the presentation you're watching now can be controlled using a LeapMotion device</h3>
-  </section>
-
-  <section data-transition="linear" data-transition-speed="medium">
-    <img style="border: 0; padding: 20px;" src="images/leapmotion-code.png">
-  </section>
-
+  <h3>During the past five years the use of JavaScript has really exploded</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > If you haven't kept up with JavaScript you'd be surprised what you can do these days
+  </aside>
 </section>
 
+<!-- These days JavaScript is kicking some ass ----------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/kickass.jpg">
+</section>
+
+<!-- JavaScript, front to back and sideways -------------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>JS front to back and sideways</h3>
+  <ul>
+    <li>No longer only in the front-end</li>
+    <li>JavaScript running in the back-end on NodeJS</li>
+    <li>Also used to build database queries in CouchDB and CouchBase</li>
+    <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > JavaScript on the front end
+    > JS in the backend with NodeJS
+    > JS in a database with CouchDB, CouchBase
+    > JS with MongoDB and Redis
+  </aside>
+</section>
+
+<!-- JavaScript in Robotics ----------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>JS in Robotics, checkout Cylon.js and NodeBots</h3>
+  <img style="border: 0; padding: 20px;" src="images/U-87-Cyber-Combat-Unit.jpg">
+  <ul>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > JS is also being used in Robotics, checkout Cylon.js and NodeBots
+  </aside>
+</section>
+
+<!-- JavaScript in Robotics ----------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>No really! JavaScript on a chip</h3>
+  <img style="border: 0; padding: 20px;" src="images/esprunio.jpg">
+  <br/>
+  <ul>
+    <li>Checkout: http://www.espruino.com</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > The nice thing about these guys is that they offer a large collection of modules from accelerometers to servo
+    motors.
+  </aside>
+</section>
+
+<!-- JavaScript in Robotics ----------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Nodecopters!</h3>
+  <img style="border: 0; padding: 20px;" src="images/NodeCopter_Berlin_2012.png">
+  <h6>http://www.nodecopter.com</h6>
+  <h6>https://github.com/felixge/node-ar-drone</h6>
+  <aside class="notes" data-markdown="">
+    ---
+    > Here is an image of a Drone being controlled at NodeCopter Berlin in 2012.
+
+    > The project uses a node.js client for controlling Parrot AR Drone quad-copters.
+
+    > How cool is that?
+
+    > I had a chance to see that live at the 2013 JS.Everywhere conference in San Francisco
+  </aside>
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>In Minority Report, Tom Cruise manipulated holographic screens by waving his hands in mid air</h3>
+  <img style="border: 0; padding: 20px;" src="images/minority-report.gif">
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>The LeapMotion Controller</h3>
+  <img style="border: 0; padding: 20px;" src="images/leap.jpg">
+
+  <h3>Programmable using JavaScript</h3>
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>In fact, the presentation you're watching now can be controlled using a LeapMotion device</h3>
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/leapmotion-code.png">
+</section>
+
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>How to be a better developer</h3>
+  <h4>Tips for leveling up</h4>
+</section>
 
 <!-- Tips for leveling up  -------------------------------------------------------------------->
-<section data-transition="cube" data-transition-speed="medium">
-  <section data-transition="linear" data-transition-speed="medium">
-    <h2>Tips for leveling up</h2>
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
+<section data-transition="linear" data-transition-speed="medium">
+  <ul>
+    <li>Leverage existing tools, libraries and frameworks</li>
+    <li>Embrace best practices</li>
+    <li>Attend conferences, or watch them on YouTube</li>
+    <li>Checkout online training sites such as Lynda.com, Tuts+, CodeSchool and podcasts such as the JavaScript Jabber
+      show
+    </li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > During the past five years there has been an explosive growth of tools.
 
-  <!-- Learn JavaScript  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Learn JavaScript</h3>
-  </section>
+    > New tools are appearing at a dizzying rate.
 
-  <!-- No really, Learn JavaScript!  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>No really, Learn JavaScript!</h3>
-    <ul>
-      <li>Still surprised by the "this" keyword?</li>
-      <li>Don't use prototype?</li>
-      <li>Don't understand type coercion?</li>
-      <li>Are you mostly using arrays and not using objects as data structures?</li>
-      <li>Don't understand hoisting?</li>
-      <li>Don't understand block vs function scoping?</li>
-      <li>Are you confused by clousures?</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
+    > If you follow this stuff you know what I mean. It's impossible to really keep up with it all.
 
-  <!-- Then you don't really know JavaScript  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Then you don't really know JavaScript</h3>
-    <img style="border: 0; padding: 20px;" src="images/You_Don_t_Know_JS_Kyle_Simpson.png">
-    <ul>
-      <li>Checkout Kyle Simpson's book series</li>
-    </ul>
-    <p>
-      <small>Bonus: Checkout Kyle's presentation deck for the 2013 HTML5 Developer Conference at
-        <a href="http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html">http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html</a>
-      </small>
-    </p>
-    <aside class="notes" data-markdown="">
-      ---
-      > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
-      > I remember being slightly offended by his accusation.
-      > His talk, which lead to a series of books, was an eye opener.
-      > I recommend you check out his books and slide deck.
-    </aside>
-  </section>
+    > Still, you need to keep an eye on new development and learn just enough to decide whether it's something you
+    should care about.
 
-  <!-- Read the source Luke  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <img style="border: 0; padding: 20px;" src="images/read-the-source-luke.jpg">
-    <ul>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Another great way to learn JavaScript is to read the source code for many popular libraries.
-    </aside>
-  </section>
+    > The Web development community has really grown up. Not only is it on par with native development, in someways
+    it's leading. There is an order of magnitude more going on in the Web and JavaScript community than in any other
+    language or platform.
 
-  <!-- Read the source Luke  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <ul>
-      <li>View the source for annotated Backbone.js, underscore.js</li>
-      <li>http://backbonejs.org/docs/backbone.html</li>
-      <li>http://underscorejs.org/docs/underscore.html</li>
-      <li>Open up the jQuery source file and see if you can follow along</li>
-    </ul>
-    <aside class="notes" data-markdown="">
-      ---
-      > Open up library code you use and try to follow along
+    > Great ways to stay on top of modern web dev is to embrace tools and best practices. Also engage the community by
+    attending meetups and conferences.
 
-      > See stuff you don't understand? Those are good opportunities to learn more about JavaScript.
+    > Don't forget the web is your friend. Checkout the great training sites available.
 
-      > Ask others to help explain a section of code which might not be clear.
-    </aside>
-  </section>
-
-  <!-- Learn to use your editor  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Learn to use your editor</h3>
-    <img style="border: 0; padding: 20px;" src="images/Atom.png">
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
-
-  <!-- Improve your typing skills  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Improve your typing skills</h3>
-    <img style="border: 0; padding: 20px;" src="images/TypeTeach_US_and_New_Tab.png">
-    <aside class="notes" data-markdown="">
-      ---
-      > If you're looking for keys and poking your keyboard using two fingers you're not moving as fast as you could.
-
-      > Furthermore, and this is important, you're spending too much time thinking about typing when you should be thinking about your code.
-
-      > Music is only music when the sounds string together. Notes heard individually are just sounds.
-    </aside>
-  </section>
-
-  <!-- Attend more meetups  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <h3>Attend more meetups</h3>
-    <img style="border: 0; padding: 20px;" src="images/hcjs_logo_01.png">
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
-
-  <!-- keep calm and level up  -------------------------------------------------------------------->
-  <section data-transition="linear" data-transition-speed="medium">
-    <img style="border: 0; padding: 20px;" src="images/keep-calm-and-level-up.png">
-    <aside class="notes" data-markdown="">
-      ---
-    </aside>
-  </section>
-
-
-
+    > Sure some of them charge 20 bucks or more per month. But seriously, it's a small price to invest in your career.
+  </aside>
 </section>
 
+<!-- Improve your typing skills  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Improve your typing skills</h3>
+  <img style="border: 0; padding: 20px;" src="images/TypeTeach_US_and_New_Tab.png">
+  <aside class="notes" data-markdown="">
+    ---
+    > If you're looking for keys and poking your keyboard using two fingers you're not moving as fast as you could.
+
+    > Furthermore, and this is important, you're spending too much time thinking about typing when you should be
+    thinking about your code.
+
+    > Music is only music when the sounds string together. Notes heard individually are just sounds.
+  </aside>
+</section>
+
+
+<!-- Love your code  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/i_love_coding_mug.jpg">
+</section>
+
+
+<!-- Learn JavaScript  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Learn JavaScript</h3>
+</section>
+
+<!-- No really, Learn JavaScript!  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>No really, Learn JavaScript!</h3>
+  <ul>
+    <li>Still surprised by the "this" keyword?</li>
+    <li>Don't use prototype?</li>
+    <li>Don't understand type coercion?</li>
+    <li>Are you mostly using arrays and not using objects as data structures?</li>
+    <li>Don't understand hoisting?</li>
+    <li>Don't understand block vs function scoping?</li>
+    <li>Are you confused by clousures?</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- Then you don't really know JavaScript  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Then you don't really know JavaScript</h3>
+  <img style="border: 0; padding: 20px;" src="images/You_Don_t_Know_JS_Kyle_Simpson.png">
+  <ul>
+    <li>Checkout Kyle Simpson's book series</li>
+  </ul>
+  <p>
+    <small>Bonus: Checkout Kyle's presentation deck for the 2013 HTML5 Developer Conference at
+      <a href="http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html">http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html</a>
+    </small>
+  </p>
+  <aside class="notes" data-markdown="">
+    ---
+    > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco
+    where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
+    > I remember being slightly offended by his accusation.
+    > His talk, which lead to a series of books, was an eye opener.
+    > I recommend you check out his books and slide deck.
+  </aside>
+</section>
+
+<!-- Read the source Luke  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/read-the-source-luke.jpg">
+  <ul>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Another great way to learn JavaScript is to read the source code for many popular libraries.
+  </aside>
+</section>
+
+<!-- Read the source Luke  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <ul>
+    <li>View the source for annotated Backbone.js, underscore.js</li>
+    <li>http://backbonejs.org/docs/backbone.html</li>
+    <li>http://underscorejs.org/docs/underscore.html</li>
+    <li>Open up the jQuery source file and see if you can follow along</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Open up library code you use and try to follow along
+
+    > See stuff you don't understand? Those are good opportunities to learn more about JavaScript.
+
+    > Ask others to help explain a section of code which might not be clear.
+  </aside>
+</section>
+
+<!-- Learn to use your editor  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Learn to use your editor</h3>
+  <img style="border: 0; padding: 20px;" src="images/Atom.png">
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- Attend more meetups  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <h3>Attend more meetups</h3>
+  <img style="border: 0; padding: 20px;" src="images/hcjs_logo_01.png">
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- Attend more meetups  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <p>Holy %hit Batman, that's a lot to learn!</p>
+  <img style="border: 0; padding: 20px;" src="images/HolyShitBatman.jpg">
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
+
+<!-- And lastly -------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="slow">
+  <h1>And lastly...</h1>
+</section>
+
+<!-- keep calm and level up  -------------------------------------------------------------------->
+<section data-transition="linear" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/keep-calm-and-level-up.png">
+  <aside class="notes" data-markdown="">
+    ---
+  </aside>
+</section>
 
 <!-- Contact -------------------------------------------------------------------------->
 <section data-transition="linear" data-transition-speed="slow">
