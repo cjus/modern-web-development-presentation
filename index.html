@@ -284,7 +284,7 @@
   <ul>
     <li>Generally speaking, one isn't better than the other</li>
     <li>It depends on what you're trying to do</li>
-    <li>For web development, Mac is a clear winner</li>
+    <li>For web development, it seems Mac is a clear winner</li>
     <li>That is, unless you're a .NET developer</li>
   </ul>
   <aside class="notes" data-markdown="">
@@ -293,11 +293,11 @@
 
     > It also depends on your level of taste and build quality expectations.
 
-    > I spent the past few years in the San Francisco bay area and attended lots of meetups.
-
-    > However the same is true at the company I currently work with in mid-town New York.
+    > I spent the past few years working with startups in the San Francisco bay area where attended lots of meetups.
 
     > In my experience, web developers seem to clearly favor Macs.
+
+    > However the same is true at the company I currently work with in mid-town New York.
 
     > There are some reasons this might be the case.
   </aside>
@@ -720,7 +720,7 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > You should be using source control for all of your work.  There's not good excuse for not doing so.
+    > You should be using source control for all of your work.  There's no good excuse for not doing so.
 
     > The benefits of a source control system is that you can track changes to the work you're doing.  How many of us haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it against a more recent change?
 
@@ -853,6 +853,12 @@
   <!--@formatter:on-->
   <aside class="notes" data-markdown="">
     ---
+    > Web components are actually set of web standards for developing component.
+
+    > You'll use those components to build applications.
+
+    > This will result in a new web component eco system where you'll be able to buy and sell components
+
     > So this has been in development for the past several years.
 
     > Web components are still relatively new in terms of any widespread deployments, but this new tech is posed to change how we work with all major frameworks.
@@ -932,19 +938,25 @@
   <h3>Preparing files for the web</h3>
   <ul>
     <li>Get to know Grunt or Gulp</li>
-    <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
+    <li>Example: modern-web-seed project at https://github.com/cjus/modern-web-seed</li>
     <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs,
       gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin,
       imagemin-pngcrush
     </li>
-    <li>$ gulp dist</li>
   </ul>
+  <!--@formatter:off-->
+    <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">
+      $ gulp dist
+    </code></pre>
+  <!--@formatter:on-->
   <aside class="notes" data-markdown="">
     ---
     > We talked about Build tools such as Grunt and Gulp earlier.
 
     > I use Grunt at work and Gulp personally. My modern-web-seed project uses the plugins listed. From the names, you
     can probably guess what each one does.
+
+    > Checkout it out to see how the tools we've discussed can all work together under a Gulp automation to build an application.
 
     > The really cool thing is that most of those plugins run when I type gulp dist.
 
@@ -1008,10 +1020,11 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > JavaScript on the front end
-    > JS in the backend with NodeJS
-    > JS in a database with CouchDB, CouchBase
-    > JS with MongoDB and Redis
+    > JavaScript is no longer only running on the front-end.
+
+    > JavaScript is literally everywhere. In fact, there's a popular conference devoted to this fact, JSEverywhere
+
+    > I've used this JS Stack to create services for several companies, where it's now in production use.
   </aside>
 </section>
 
@@ -1037,11 +1050,16 @@
   <aside class="notes" data-markdown="">
     ---
     > NodeJS is a platform tool which allows you to build network applications, such as web servers, API servers etc...
-    > Best of all it's allows you to do so using JavaScript!
-    > Many people think NodeJS is a server technology. However, it's much more than that. NodeJS powers lcoal client-side applications such as build tools and transpilers.
+
+    > Best of all it allows you to do so using JavaScript!
+
+    > Many people think NodeJS is a server technology. However, it's much more than that. NodeJS powers local client-side applications such as build tools and transpilers.
+
     > Heck even brackets and atom are being powered by NodeJS.
+
     > For many developers node has replaced the need to write complex shell scripts. Instead we just use
     JavaScript. I wrote a commandline tool called bunext to query application log files.
+
     > Node has also helped to bring JS to Robotics
   </aside>
 </section>
@@ -1056,7 +1074,7 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > JS is also being used in Robotics, checkout Cylon.js and NodeBots
+    > JS is also being used in Robotics (thanks to NodeJS), checkout Cylon.js and NodeBots
   </aside>
 </section>
 
@@ -1116,6 +1134,10 @@
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <h3>In fact, the presentation you're watching now can be controlled using a LeapMotion device</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > So I brought one with me today. After the prentation I'll be glad to give a live demo.
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -1277,6 +1299,19 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
+    > Are you still surprised by the "this" keyword?
+
+    > You don't use prototype?
+
+    > Don't understand type coercion?
+
+    > Are you mostly using arrays and not using objects as data structures?
+
+    > Don't understand hoisting?
+
+    > Don't understand block vs function scoping?
+
+    > Are you confused by closures?
   </aside>
 </section>
 
