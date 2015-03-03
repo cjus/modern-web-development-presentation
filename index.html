@@ -96,23 +96,25 @@
     href="http://github.com/cjus/modern-web-development-presentation">
     http://github.com/cjus/modern-web-development-presentation</a>
     <br>Issues with this presentation? Fix it and issue a pull request
-    </small>
+  </small>
   <aside class="notes" data-markdown="">
     ---
-    > We have a lot to cover so I won't be doing any deep dives. This presentation should be a jumping off point for
-    further investigation.
+    > The subject of web development is too vast to cover in a short presentation
 
-    > So, I may not cover your favorite tool.
+    > So we have a lot to cover so I won't be doing any deep dives. This presentation should be a jumping off point for
+    your own further investigation.
 
-    > The goal of this presentation is to discuss web development and to consider what modern web devs are doing these
+    > I may not cover your favorite tool. That doesn't mean it's not cool. Definitely tell us about it after the presentation.
+
+    > So, the goal of this presentation is to discuss web development and to consider what modern web devs are doing these
     days.
 
     > We're also going to look at specific tips you or your team members can use to become better developers.
 
-    > Along the way we'll also look at how web tech is finding it's way into non-web areas of technology
+    > Along the way we'll also look at how web tech is finding its way into non-web areas of technology.
 
     > In the spirit of modern web development this presentation is built entirely with HTML, CSS and JavaScript and
-    works on your modern web browser and mobile devices.
+    works in your modern web browser and mobile devices.
 
     > This presentation is also open source and available on Github.
 
@@ -125,6 +127,10 @@
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <h3>What is modern web development?</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > So, what is modern web development?
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -133,6 +139,10 @@
 <section data-transition="none" data-transition-speed="medium">
   <h3>In short, it's about working smarter and not harder...</h3>
   <h3>That's the "modern" bit</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > In short it's simply about working smarter using tools and automation.
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -141,6 +151,10 @@
 <section data-transition="none" data-transition-speed="medium">
   <h3>Signs you may not be practicing modern web development</h3>
   <img style="border: 0; padding: 20px;" src="images/signs.jpg">
+  <aside class="notes" data-markdown="">
+    ---
+    > Some signs that you or someone you know may not be practicing modern web development...
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -154,6 +168,17 @@
     <li>work in monolithic source files with no real code organization</li>
     <li>don't use a library or framework such as: Backbone, Ember, Knockout, React or Angular</li>
   </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Do you or your team - build and edit code using generic text editors?
+
+    > How about deploying raw files to web servers without packaging?
+
+    > Does your project code contain monolithic source files which lack any real organization?
+
+    > Are you using a home grown framework instead of one of the well established ones such as Backbone, Ember,
+    Knockout, React or Angular?
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -167,6 +192,16 @@
     <li>don't use code linters, style checkers, or beautifiers</li>
     <li>don't do any real testing</li>
   </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Do you feel that file folders and zip files are a quick and convenient way of tracking your code changes?
+
+    > Do you repeat manual processes instead of automating them?
+
+    > Do you think that linters, style checkers and beautifiers are for wimps?
+
+    > Do you feel that you don't adequately test your code?
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -226,7 +261,7 @@
   <img style="border: 0; padding: 20px;" src="images/elephant-in-the-room.png">
   <aside class="notes" data-markdown="">
     ---
-    > Let's begin with the elephant in the room
+    > But before we begin, let's start with the elephant in the room
   </aside>
 </section>
 
@@ -237,7 +272,7 @@
   <img style="border: 0; padding: 20px;" src="images/macvspc.png">
   <aside class="notes" data-markdown="">
     ---
-    >
+    > Believe it or not, this question comes up more than you'd expect.
   </aside>
 </section>
 
@@ -254,7 +289,17 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    >
+    > Generally speaking it depends on what you're trying to do.
+
+    > It also depends on your level of taste and build quality expectations.
+
+    > I spent the past few years in the San Francisco bay area and attended lots of meetups.
+
+    > However the same is true at the company I currently work with in mid-town New York.
+
+    > In my experience, web developers seem to clearly favor Macs.
+
+    > There are some reasons this might be the case.
   </aside>
 </section>
 
@@ -268,39 +313,29 @@
     <li>MacOSX is based on Unix, you get a compatible terminal environment</li>
     <li>The products you run on Linux based servers, often have binaries for Mac: Apache, Nginx, Redis, MongoDB etc...</li>
     <li>Develop native iOS and Android mobile applications</li>
-    <li>Fact is you can do all of this on a PC, it just requires you to run more software while hopping through hoops</li>
+    <li>Fact is you can do all of this on a PC, it just requires you to run more software while leaping through hoops</li>
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    >
+    > The web is powered by Linux machines.
+
+    > For developers working with Linux environments, Macs offer compatible local terminal environments
+
+    > The two most popular web servers are Apache and Nginx - both born and bread on Linux - but now available for Windows.
+
+    > For a long time, most popular Internet software didn't even run on Windows. Microsoft has invested heavily in ensuring that's not longer the case. Largely because of their Azure, cloud platform.  The company that was allergic to open source is now embracing it.
+
+    > If you're developing native mobile products on iOS or Android, Macs allow you to do both.
+
+    > So, the fact is that you can do all this on a PC, it just requires you to jump through more hoops.
   </aside>
 </section>
 
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- If you're using a Mac -------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>If you're using a Mac, check out these must have tools</h3>
-  <ul>
-    <li>Homebrew: http://brew.sh/</li>
-    <li>iTerm2: http://iterm2.com/</li>
-  </ul>
+  <img style="border: 0; padding: 20px;" src="images/leaping-through-hoop.jpg">
+  <p>That said, some folks like that sort of thing</p>
   <aside class="notes" data-markdown="">
     ---
-    >
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Apple Fan Boy ---------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/apple-fan-boy.jpg">
-  <aside class="notes" data-markdown="">
-    ---
-    > OK, that's enough fanboy-ism.
-
-    > As aways, to each his own.
   </aside>
 </section>
 
@@ -344,7 +379,13 @@
   <p>Ubuntu Linux running in a VM under Windows 7</p>
   <aside class="notes" data-markdown="">
     ---
-    >
+    > Here we see Ubuntu Linux running in a VM under Windows.
+
+    > This totally works. However, it's not the speediest of things.
+
+    > If you have a machine with lots of memory and spare CPU cores you might be just fine.
+
+    > I've done this on an 8GB Dell with quad core CPUs and solid state drives
   </aside>
 </section>
 
@@ -355,7 +396,7 @@
   <h3>Text Editor or IDE?</h3>
   <aside class="notes" data-markdown="">
     ---
-    > The next battle we'll wage is between Text editors and Integrated Development Environments or IDEs.
+    > OK, let's move on to Text editors and Integrated Development Environments or IDEs.
   </aside>
 </section>
 
@@ -768,6 +809,46 @@
     there allow you to interact with the dom. Angular for instance, specifies how and when you should do so. Which
     library or framework you use depends on how opinions you feel you can benefit from. Unless you suffer from not
     invented here syndrome, you will probably benefit from one of the many freely available frameworks.
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Enter web components ---------------------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Enter Web Components</h3>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Enter web components ---------------------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <img style="border: 0; padding: 20px;" src="images/webcomponent.png">
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Posed to change how we develop web applications ------------------------------------------------------------------>
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Posed to change how we develop web applications</h3>
+  <ul>
+    <li>This will impact how we work with all major frameworks</li>
+    <li>Web Components are actually a group of standards</li>
+    <li>There are four key pieces that are used together: Templates, Custom Elements, Shadow DOM, HTML Imports</li>
+    <li>Custom Elements in particular allow you to create your own HTML elements</li>
+  </ul>
+  <!--@formatter:off-->
+    <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">
+&lt;fancy-dropdown&gt;&lt;/fancy-dropdown&gt;
+    </code></pre>
+  <!--@formatter:on-->
+  <aside class="notes" data-markdown="">
+    ---
+    > So this has been in development for the past several years.
+
+    > Web components are still relatively new in terms of any widespread deployments, but this new tech is posed to change how we work with all major frameworks.
+
+    > This is definitely a technology to learn about and prepare for.
   </aside>
 </section>
 
@@ -1327,7 +1408,7 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Attend more meetups  --------------------------------------------------------------------------------------------->
+<!-- Holy shit Batman, that's a lot to learn!  ------------------------------------------------------------------------>
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <p>Holy %hit Batman, that's a lot to learn!</p>
@@ -1338,10 +1419,32 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Take it one day at a time ---------------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="slow">
+  <h3>Take it one day at a time</h3>
+  <ul>
+    <li>The key is to be better today than you were yesterday</li>
+    <li>Pick an area of interest and work on that, then move to the next</li>
+    <li>Learn one new thing every month and at the end of the year you'll be worth 10-20K more</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > A key to leveling up is to take things one step at a time.
+
+    > Strive to be better today than you were yesterday.
+
+    > These small steps can have far reaching possibilities. You can for example increase your annual earnings by being more marketable.
+
+    > If that happens, consider donating to our JS meetup!
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- And lastly ------------------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="slow">
-  <h1>And lastly...</h1>
+  <h2>And lastly...</h2>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -1351,6 +1454,9 @@
   <img style="border: 0; padding: 20px;" src="images/keep-calm-and-level-up.png">
   <aside class="notes" data-markdown="">
     ---
+    > Remember there's nothing to it but to do it!
+
+    > If you need help, consider posting on our meetup's discussions forum and don't be afraid to ask a member for help.
   </aside>
 </section>
 
