@@ -365,7 +365,7 @@
 
     > Docker is a platform that has taken the developer community by storm in recent years.  With Docker you can create an application and distribute it to other developers for local use and to sysadmins for deployment to cloud servers.  The entire docker movement is part of a trend called containerization where applications are placed in virtual containers.
 
-    > In truth, the contains are hydrated, meaning that what is shared is a definition file that can be used to download and configure an application... but that's getting a bit more technical.
+    > In truth, the containers are hydrated, meaning that what is shared is a definition file that can be used to download and configure an application... but that's getting a bit more technical.
 
     > So lots of options, each with pros and cons.
   </aside>
@@ -572,143 +572,6 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Helper libraries ------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Helper libraries</h3>
-  <ul>
-    <li>BootStrap</li>
-    <li>jQuery</li>
-    <li>Underscore and Lodash</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > The more libraries you add to your project the more you need a tool to maintain you app dependencies
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Maintaining your app's dependencies ------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Maintaining your app's dependencies</h3>
-  <ul>
-    <li>Modern web apps often include lots of package dependencies</li>
-    <li>From jQuery to Bootstrap to a libraries such as Ember or React</li>
-    <li>Tools exist to manage project dependencies. Get to know Bower - a package manager</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Modern web devs use dependency package managers such as Bower and NPM to manage their project dependencies.
-
-    > You basically list your dependencies in a configuration file so anyone team member can grab the project code and
-    easily install required dependencies
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Preparing files for the web -------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Preparing files for the web</h3>
-  <ul>
-    <li>Get to know Grunt or Gulp</li>
-    <li>I use Gulp in my modern-web-seed project: https://github.com/cjus/modern-web-seed</li>
-    <li>The plugins I uses: gulp-jshint, gulp-angular-templatecache, gulp-sass, gulp-uglify, gulp-jscs,
-      gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin,
-      imagemin-pngcrush
-    </li>
-    <li>$ gulp dist</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > We talked about Build tools such as Grunt and Gulp earlier.
-
-    > I use Grunt at work and Gulp personally. My modern-web-seed project uses the plugins listed. From the names, you
-    can probably guess what each one does.
-
-    > The really cool thing is that most of those plugins run when I type gulp dist.
-
-    > This is serious automation and a major time saver during development
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Grunt and Gulp - what's the difference --------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Grunt and Gulp - what's the difference</h3>
-  <aside class="notes" data-markdown="">
-    ---
-    > Gulp is the newer kid on the block
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Get with Git  ---------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Get with Git</h3>
-  <aside class="notes" data-markdown="">
-    ---
-    > Git (/ɡɪt/[5]) is a distributed revision control system with an emphasis on speed,[6] data integrity,[7] and
-    support for distributed, non-none workflows.[8] Git was initially designed and developed by Linus Torvalds for
-    Linux kernel development in 2005, and has since become the most widely adopted version control system for software
-    development.[9]
-
-    > Linus Torvalds has quipped about the name "git", which is British English slang for a stupid or unpleasant person:
-    "I'm an egotistical bastard, and I name all my projects after myself. First Linux, now git." (Note that Torvalds did
-    not in fact name Linux.)Jan 18, 2012
-
-    > Why Git is better: http://thkoch2001.github.io/whygitisbetter/
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Transpilers ------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Transpilers</h3>
-  <ul>
-    <li>Tools that convert from one language to another</li>
-    <li>Typically for the purpose of extending or simplifying a language or using language features before they become
-      widely available</li>
-    <li>Examples: CoffeeScript, SASS/Compass, ES6 to ES5 transpilers</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Transpilers are tools that convert from one language to another. Typically for the purpose of extending a
-    language or using language features before they become widely available.
-
-    > Examples include:
-
-    > CoffeeScript, a transpiler that simplifies JavaScript for Ruby developers terrified of actually learning
-    JavaScript. Ok, cheap shot.
-
-    > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build process.
-
-    > Ex: ES6 to ES5 transpiler, allows devs to use new ES6 JavaScript features by transpiling them to the ES5 that
-    modern browsers understand.
-
-    > SASS, LESS, and SCSS to CSS | CoffeeScript | https://babeljs.io/ formally 6to5.
-    > Traceur: https://egghead.io/lessons/intro-to-es6-and-traceur-js
-
-    > Asm.js
-    > https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js
-    > http://asmjs.org/spec/latest/
-
-    > C/C++ to JS:
-    http://blogs.msdn.com/b/ie/archive/2015/02/18/bringing-asm-js-to-the-chakra-javascript-engine-in-windows-10.aspx
-
-    > Google's NativeClient: https://developer.chrome.com/native-client
-    > Emscripten is an LLVM to JavaScript compiler. It takes LLVM bytecode (e.g. generated from C/C++ using Clang, or
-    from another language) and compiles that into JavaScript, which can be run on the Web.
-    > https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Emscripten
-    > The LLVM Compiler Infrastructure (llvm.org)
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- Improving code quality and reducing errors ----------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
@@ -737,18 +600,164 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- continuous integration services. --------------------------------------------------------------------------------->
+<!-- Helper libraries ------------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>Continuous integration services</h3>
+  <h3>Helper libraries</h3>
   <ul>
+    <li>jQuery, jQueryUI</li>
+    <li>BootStrap</li>
+    <li>Underscore and Lodash</li>
+  </ul>
+  <!--@formatter:off-->
+    <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">
+      _.uniq([1, 2, 1]);
+      // → [1, 2]
+
+      function timesThree(n) {
+        return n * 3;
+      }
+      _.map([1, 2], timesThree);
+      // → [3, 6]
+    </code></pre>
+  <!--@formatter:on-->
+  <aside class="notes" data-markdown="">
+    ---
+    > There are lots of libraries that can help you develop web applications.
+
+    > jQuery in particular has become a staple in most developer diets.
+
+    > Libraries like BootStrap allow you to quickly style an application. This has been a god send for artistically challenged developers the world over! This has also lead to a common complaint that too many sites look alike or that you can always spot a Bootstrap enabled sites.
+
+    > Libraries like Underscore and Lodash so something entirely different. They provide developers with new programming statements (really functions) which simplify common programming tasks.
+
+    > Take the _.uniq statement for example.  Given an array it returns an array of unique values.  Handy right?
+
+    > Next we have a function called timesThree which multiples a number argument by 3 and returns the new value.
+
+    > My using the _.map statement we can take an array of values and map them using the timeThree function, that is, pass each array element to the timesThree function and store the resulting values in a new array.
+
+    > Lodash is considered the more modern of the two, but check out both underscore and lodash.
+
+    > This brings us to an interesting challenge.
+
+    > The more libraries we add to our projects, the more we need a tool to maintaining our app dependencies.
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Maintaining your app's dependencies ------------------------------------------------------------------------------>
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Maintaining your app's dependencies</h3>
+  <ul>
+    <li>Modern web apps often include lots of package dependencies</li>
+    <li>From jQuery to Bootstrap to a libraries such as Ember or React</li>
+    <li>Tools exist to manage project dependencies. Get to know Bower - a package manager</li>
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Jenkins
-    > Drone: > https://github.com/drone/drone
-    > Travis
-    > CodeShip
+    > Modern web devs use dependency package managers such as Bower and NPM to manage their project dependencies.
+
+    > You basically list your dependencies in a configuration file so anyone team member can grab the project code and
+    easily install required dependencies.
+
+    > A package manager such as Bower will help you track and maintain your app's dependencies. When it comes time to upgrade a package you can use Bower to download and install the latest version.
+
+    > Our Ruby friends introduced us to package managers back in the day. Today, package managers exists for all major platform.
+
+    > With NodeJS we have NPM, the Node Package Manager.
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Preparing files for the web -------------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Preparing files for the web</h3>
+  <ul>
+    <li>Modern web applications require that files be optimized and packaged for web deployment</li>
+    <li>Often using a combination of concatination and minification</li>
+    <li>It's not just for JavaScript, minifiers exists for HTML, CSS and image files!</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
+    competitors.
+
+    > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
+    per year.
+
+    > Google determined that if its search results were four tenths of a second slower they could lose 8 million
+    searches per day. The result of which would be millions fewer online ads.
+
+    > Clearly, performance matters.
+
+    > Optimizing a web application for production use involves intelligently packaging site files so that they take up
+    less space and load faster. This process involves tools called minifiers which translate file contents into
+    smaller version by renaming code variable and doing things like removing white space characters.
+
+    > Minifiers exists for HTML, CSS and JavaScript.
+
+    > There are also image minifiers which change the compression ratio on images to reduce their size without
+    impacting quality in a noticeable manner.
+
+    > If you're not using one of them, check them out!
+
+    > We'll talk more about this shortly.
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Get with Git  ---------------------------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Get with Git</h3>
+  <ul>
+    <li>It's distributed source control - for you and your team!</li>
+    <li>Seriously - source control - it's not optional!</li>
+    <li>Why Git is better: http://thkoch2001.github.io/whygitisbetter</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > You should be using source control for all of your work.  There's not good excuse for not doing so.
+
+    > The benefits of a source control system is that you can track changes to the work you're doing.  How many of us haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it against a more recent change?
+
+    > Seriously - source control - it's not optional!
+
+    > One, free and wildly successful source control system is called Git. Git was initially created by Linus Torvalds (the creator Linux) back in 2005
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- Transpilers ------------------------------------------------------------------------------------------------------>
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Transpilers</h3>
+  <ul>
+    <li>Tools that convert from one language to another</li>
+    <li>Typically for the purpose of extending or simplifying a language or using language features before they become
+      widely available</li>
+    <li>Examples include: CoffeeScript, SASS/Compass, ES6 to ES5 transpilers, such as Traceur and BabelJS</li>
+    <li>There's Asm.JS to enable C++ to JS transpilation</li>
+    <li>Checkout: https://developer.mozilla.org/en-US/demos/detail/bananabread</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Transpilers are tools that convert from one language to another. Typically for the purpose of extending a
+    language or using language features before they become widely available.
+
+    > Examples include:
+
+    > CoffeeScript, a transpiler that simplifies JavaScript for Ruby developers terrified of actually learning
+    JavaScript.
+
+    > Ok, cheap shot.
+
+    > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build process.
+
+    > Then there's Asm.JS to enable C++ to JS transpilation. If you haven't seen the Bananabread demo you really should check it out.</li>
   </aside>
 </section>
 
@@ -839,7 +848,7 @@
   </ul>
   <!--@formatter:off-->
     <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">
-&lt;fancy-dropdown&gt;&lt;/fancy-dropdown&gt;
+      &lt;fancy-dropdown&gt;&lt;/fancy-dropdown&gt;
     </code></pre>
   <!--@formatter:on-->
   <aside class="notes" data-markdown="">
@@ -849,42 +858,6 @@
     > Web components are still relatively new in terms of any widespread deployments, but this new tech is posed to change how we work with all major frameworks.
 
     > This is definitely a technology to learn about and prepare for.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Performance tools  ----------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Performance tools</h3>
-  <ul>
-    <li>Performance matters!</li>
-    <li>Optimize for production use: use concatination and minification</li>
-    <li>They're not just for JavaScript, minifiers exists for HTML, CSS and image files!</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
-    competitors.
-
-    > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
-    per year.
-
-    > Google determined that if its search results were four tenths of a second slower they could lose 8 million
-    searches per day. The result of which would be millions fewer online ads.
-
-    > Clearly, performance matters.
-
-    > Optimizing a web application for production use involves intelligently packaging site files so that they take up
-    less space and load faster. This process involves tools called minifiers which translate file contents into
-    smaller version by renaming code variable and doing things like removing white space characters.
-
-    > Minifiers exists for HTML, CSS and JavaScript.
-
-    > There are also image minifiers which change the compression ratio on images to reduce their size without
-    impacting quality in a noticeable manner.
-
-    > If you're not using one of them, check them out!
   </aside>
 </section>
 
@@ -978,6 +951,31 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
+<!-- continuous integration services ---------------------------------------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------>
+<section data-transition="none" data-transition-speed="medium">
+  <h3>Continuous integration</h3>
+  <ul>
+    <li>A tool that periodically builds your product in the background and sends you messages if your build doesn't succeed</li>
+    <li>Runs your tests scripts as well</li>
+    <li>Consider this an early warning system before your build makes it to QA and long before it makes it to production</li>
+    <li>Here are just few services to consider: Jenkins, Travis, CodeShip and Drone</li>
+  </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > Continuous integration (or CI as it's commonly called) is a process whereby your project is build and tested periodically
+
+    > Modern web developers reconize the value of automation and if we can automate some of our testing then we're better off!
+
+    > As an early warning system, CIs are a major time saver because issues are identified as you develop and check in your code
+
+    > This can help the guy who insist on checking in seemly simple code without testing it.
+
+    > Tip: Don't be that guy!
+  </aside>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- This ain't your daddy's JavaScript ------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
@@ -1023,21 +1021,26 @@
   <img style="border: 0; padding: 20px;" src="images/node.png">
 </section>
 
-
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- A few words about NodeJS ----------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>NodeJS</h3>
+  <h3>Node.JS</h3>
   <ul>
-    <li></li>
+    <li>So in case you don't know: NodeJS is a platform tool which can be used to build network applications using JavaScript</li>
+    <li>However, Node is also used to build both server and client-side tools</li>
+    <li>For example, the Grunt and Gulp build tools sit on top of Node, also the transpilers we spoke about are also powered by Node</li>
+    <li>Heck, even the Brackets and Atom text editors are powered by client-side NodeJS!</li>
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Talk about how node js has made it possible to build tools such as build tools, transpilers and any any tool you
-    can imagine. For many developers node has replaced the need to write complex shell scripts. Instead we just use
+    > NodeJS is a platform tool which allows you to build network applications, such as web servers, API servers etc...
+    > Best of all it's allows you to do so using JavaScript!
+    > Many people think NodeJS is a server technology. However, it's much more than that. NodeJS powers lcoal client-side applications such as build tools and transpilers.
+    > Heck even brackets and atom are being powered by NodeJS.
+    > For many developers node has replaced the need to write complex shell scripts. Instead we just use
     JavaScript. I wrote a commandline tool called bunext to query application log files.
-    > Node has also helped to begin JS to Robotics
+    > Node has also helped to bring JS to Robotics
   </aside>
 </section>
 
