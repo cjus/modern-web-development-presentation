@@ -51,31 +51,6 @@
       <a href="http://twitter.com/cjus">@cjus</a> / ver: 1.0.0</small>
   </p>
   <aside class="notes" data-markdown="">
-    ---
-    > Before we begin, by a show of hands, how many people have used the following:
-
-    > How many of you are using Bootstrap or Foundation?
-
-    > A build tool such as Grunt or Gulp?
-
-    > A text editor such as Sublime, Brackets or Atom?
-
-    > How about an IDE such as Webstorm, Eclipse or Aptana?
-
-    > How many of you use a source control system such as Subversion, Git or Github?
-
-    > How about a library such as Backbone, Ember, Knockout or React?
-
-    > How about a framework such as AngularJS?
-
-    > Ok, how many of us have done unit testing using Jasmine, qUnit or Mocha?
-
-    > Any CoffeeScripters in the house?
-
-    > Anyone use ES6 features today?
-
-    > Hmmm ok, interesting. If you're not familiar with any of terms I've just referenced we'll go over them in this
-    presentation
   </aside>
 </section>
 
@@ -88,8 +63,6 @@
     <li>This is a 30,000 foot view</li>
     <li>The goal is to convey topic breath and not depth</li>
     <li>We'll cover what modern web devs are doing</li>
-    <li>We'll also cover ways in which you can level up as a modern web developer</li>
-    <li>Along the way we'll also look at how web tech is finding its way into non-web areas of technology</li>
   </ul>
   <hr>
   <small class="pre-bold pres-light-yellow-highlight">Presentation source at: <a
@@ -104,10 +77,11 @@
     > So we have a lot to cover so I won't be doing any deep dives. This presentation should be a jumping off point for
     your own further investigation.
 
-    > I may not cover your favorite tool. That doesn't mean it's not cool. Definitely tell us about it after the presentation.
+    > I may not cover your favorite tool. That doesn't mean it's not cool. Definitely tell us about it after the
+    presentation.
 
-    > So, the goal of this presentation is to discuss web development and to consider what modern web devs are doing these
-    days.
+    > So, the goal of this presentation is to discuss web development and to consider what modern web devs are doing
+    these days.
 
     > We're also going to look at specific tips you or your team members can use to become better developers.
 
@@ -164,7 +138,7 @@
   <h3>If you or your team...</h3>
   <ul>
     <li>build and edit source files using a generic text editor</li>
-    <li>deploy raw files to webservers without packaging</li>
+    <li>deploy raw files to web servers without packaging</li>
     <li>work in monolithic source files with no real code organization</li>
     <li>don't use a library or framework such as: Backbone, Ember, Knockout, React or Angular</li>
   </ul>
@@ -237,7 +211,7 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- By providing better tools ------------------------------------------------------------------------------->
+<!-- By providing better tools ---------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <h3>By providing better tools</h3>
@@ -311,9 +285,11 @@
   <ul>
     <li>Most servers on the web are running Linux</li>
     <li>MacOSX is based on Unix, you get a compatible terminal environment</li>
-    <li>The products you run on Linux based servers, often have binaries for Mac: Apache, Nginx, Redis, MongoDB etc...</li>
+    <li>The products you run on Linux based servers, often have binaries for Mac: Apache, Nginx, Redis, MongoDB
+      etc...</li>
     <li>Develop native iOS and Android mobile applications</li>
-    <li>Fact is you can do all of this on a PC, it just requires you to run more software while leaping through hoops</li>
+    <li>Fact is you can do all of this on a PC, it just requires you to run more software while leaping through
+      hoops</li>
   </ul>
   <aside class="notes" data-markdown="">
     ---
@@ -321,13 +297,19 @@
 
     > For developers working with Linux environments, Macs offer compatible local terminal environments
 
-    > The two most popular web servers are Apache and Nginx - both born and bread on Linux - but now available for Windows.
+    > The two most popular web servers are Apache and Nginx - both born and bread on Linux - but now available for
+    Windows.
 
-    > For a long time, most popular Internet software didn't even run on Windows. Microsoft has invested heavily in ensuring that's not longer the case. Largely because of their Azure, cloud platform.  The company that was allergic to open source is now embracing it.
+    > For a long time, most popular Internet software didn't even run on Windows. Microsoft has invested heavily in
+    ensuring that's not longer the case. Largely because of their Azure, cloud platform.  The company that was allergic
+    to open source is now embracing it.
 
     > If you're developing native mobile products on iOS or Android, Macs allow you to do both.
 
-    > So, the fact is that you can do all this on a PC, it just requires you to jump through more hoops.
+    > So what if you're stuck with a PC? We have a saying in photography... the best camera is the one you have have
+    with you.
+
+    > You can in fact do all this on a PC, it just requires you to jump through more hoops.
   </aside>
 </section>
 
@@ -355,17 +337,24 @@
     ---
     > A popular option is to use virtual machine software on your Mac or PC, in order to run Linux.
 
-    > I use Macs and my work laptop has a linux VM running so I can develop locally while accessing a web server that routes calls to API servers.
+    > I use Macs and my work laptop has a linux VM running so I can develop locally while accessing a web server that
+    routes calls to API servers.
 
     > Oracle has a free VM product called Virtual Box that runs on both Mac's and PC's.
 
-    > Vagrant is a product that can sit on top of Virtual Box in order to allow developers to setup lightweight and portable development environments.
+    > Vagrant is a product that can sit on top of Virtual Box in order to allow developers to setup lightweight and
+    portable development environments.
 
-    > The idea is that by hosting your dev environment in Vagrant, every member of the team can have identical local access to the same type of environment.
+    > The idea is that by hosting your dev environment in Vagrant, every member of the team can have identical local
+    access to the same type of environment.
 
-    > Docker is a platform that has taken the developer community by storm in recent years.  With Docker you can create an application and distribute it to other developers for local use and to sysadmins for deployment to cloud servers.  The entire docker movement is part of a trend called containerization where applications are placed in virtual containers.
+    > Docker is a platform that has taken the developer community by storm in recent years.  With Docker you can create
+    an application and distribute it to other developers for local use and to sysadmins for deployment to cloud servers.
+    The entire docker movement is part of a trend called containerization where applications are placed in virtual
+    containers.
 
-    > In truth, the containers are hydrated, meaning that what is shared is a definition file that can be used to download and configure an application... but that's getting a bit more technical.
+    > In truth, the containers are hydrated, meaning that what is shared is a definition file that can be used to
+    download and configure an application... but that's getting a bit more technical.
 
     > So lots of options, each with pros and cons.
   </aside>
@@ -627,15 +616,19 @@
 
     > jQuery in particular has become a staple in most developer diets.
 
-    > Libraries like BootStrap allow you to quickly style an application. This has been a god send for artistically challenged developers the world over! This has also lead to a common complaint that too many sites look alike or that you can always spot a Bootstrap enabled sites.
+    > Libraries like BootStrap allow you to quickly style an application. This has been a god send for artistically
+    challenged developers the world over! This has also lead to a common complaint that too many sites look alike or
+    that you can always spot a Bootstrap enabled sites.
 
-    > Libraries like Underscore and Lodash so something entirely different. They provide developers with new programming statements (really functions) which simplify common programming tasks.
+    > Libraries like Underscore and Lodash so something entirely different. They provide developers with new programming
+    statements (really functions) which simplify common programming tasks.
 
     > Take the _.uniq statement for example.  Given an array it returns an array of unique values.  Handy right?
 
     > Next we have a function called timesThree which multiples a number argument by 3 and returns the new value.
 
-    > My using the _.map statement we can take an array of values and map them using the timeThree function, that is, pass each array element to the timesThree function and store the resulting values in a new array.
+    > My using the _.map statement we can take an array of values and map them using the timeThree function, that is,
+    pass each array element to the timesThree function and store the resulting values in a new array.
 
     > Lodash is considered the more modern of the two, but check out both underscore and lodash.
 
@@ -662,9 +655,11 @@
     > You basically list your dependencies in a configuration file so anyone team member can grab the project code and
     easily install required dependencies.
 
-    > A package manager such as Bower will help you track and maintain your app's dependencies. When it comes time to upgrade a package you can use Bower to download and install the latest version.
+    > A package manager such as Bower will help you track and maintain your app's dependencies. When it comes time to
+    upgrade a package you can use Bower to download and install the latest version.
 
-    > Our Ruby friends introduced us to package managers back in the day. Today, package managers exists for all major platform.
+    > Our Ruby friends introduced us to package managers back in the day. Today, package managers exists for all major
+    platform.
 
     > With NodeJS we have NPM, the Node Package Manager.
   </aside>
@@ -722,11 +717,14 @@
     ---
     > You should be using source control for all of your work.  There's no good excuse for not doing so.
 
-    > The benefits of a source control system is that you can track changes to the work you're doing.  How many of us haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it against a more recent change?
+    > The benefits of a source control system is that you can track changes to the work you're doing.  How many of us
+    haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it
+    against a more recent change?
 
     > Seriously - source control - it's not optional!
 
-    > One, free and wildly successful source control system is called Git. Git was initially created by Linus Torvalds (the creator Linux) back in 2005
+    > One, free and wildly successful source control system is called Git. Git was initially created by Linus Torvalds
+    (the creator Linux) back in 2005
   </aside>
 </section>
 
@@ -757,7 +755,8 @@
 
     > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build process.
 
-    > Then there's Asm.JS to enable C++ to JS transpilation. If you haven't seen the Bananabread demo you really should check it out.</li>
+    > Then there's Asm.JS to enable C++ to JS transpilation. If you haven't seen the Bananabread demo you really should
+    check it out.
   </aside>
 </section>
 
@@ -822,14 +821,14 @@
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Enter web components ---------------------------------------------------------------------------------------------->
+<!-- Enter web components --------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <h3>Enter Web Components</h3>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Enter web components ---------------------------------------------------------------------------------------------->
+<!-- Enter web components --------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <img style="border: 0; padding: 20px;" src="images/webcomponent.png">
@@ -861,7 +860,8 @@
 
     > So this has been in development for the past several years.
 
-    > Web components are still relatively new in terms of any widespread deployments, but this new tech is posed to change how we work with all major frameworks.
+    > Web components are still relatively new in terms of any widespread deployments, but this new tech is posed to
+    change how we work with all major frameworks.
 
     > This is definitely a technology to learn about and prepare for.
   </aside>
@@ -956,7 +956,8 @@
     > I use Grunt at work and Gulp personally. My modern-web-seed project uses the plugins listed. From the names, you
     can probably guess what each one does.
 
-    > Checkout it out to see how the tools we've discussed can all work together under a Gulp automation to build an application.
+    > Checkout it out to see how the tools we've discussed can all work together under a Gulp automation to build an
+    application.
 
     > The really cool thing is that most of those plugins run when I type gulp dist.
 
@@ -970,18 +971,23 @@
 <section data-transition="none" data-transition-speed="medium">
   <h3>Continuous integration</h3>
   <ul>
-    <li>A tool that periodically builds your product in the background and sends you messages if your build doesn't succeed</li>
+    <li>A tool that periodically builds your product in the background and sends you messages if your build doesn't
+      succeed</li>
     <li>Runs your tests scripts as well</li>
-    <li>Consider this an early warning system before your build makes it to QA and long before it makes it to production</li>
+    <li>Consider this an early warning system before your build makes it to QA and long before it makes it to
+      production</li>
     <li>Here are just few services to consider: Jenkins, Travis, CodeShip and Drone</li>
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Continuous integration (or CI as it's commonly called) is a process whereby your project is build and tested periodically
+    > Continuous integration (or CI as it's commonly called) is a process whereby your project is build and tested
+    periodically
 
-    > Modern web developers reconize the value of automation and if we can automate some of our testing then we're better off!
+    > Modern web developers recognize the value of automation and if we can automate some of our testing then we're
+    better off!
 
-    > As an early warning system, CIs are a major time saver because issues are identified as you develop and check in your code
+    > As an early warning system, CIs are a major time saver because issues are identified as you develop and check in
+    your code
 
     > This can help the guy who insist on checking in seemly simple code without testing it.
 
@@ -989,543 +995,18 @@
   </aside>
 </section>
 
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- This ain't your daddy's JavaScript ------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>During the past five years the use of JavaScript has really exploded</h3>
-  <aside class="notes" data-markdown="">
-    ---
-    > If you haven't kept up with JavaScript you'd be surprised what you can do these days
-  </aside>
-</section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- These days JavaScript is kicking some ass ------------------------------------------------------------------------>
+<!-- Plan of attack --------------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/kickass.jpg">
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- JavaScript, front to back and sideways --------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>JS front to back - and sideways</h3>
+  <h3>Formulating a plan of attack</h3>
   <ul>
-    <li>No longer only in the front-end</li>
-    <li>JavaScript running in the back-end on NodeJS</li>
-    <li>Also used to build database queries in CouchDB and CouchBase</li>
-    <li>JavaScript Object Notation is also used with databases such as Couch, Mongo and Redis</li>
+    <li>Work incrementally. Don't try all this at once.</li>
+    <li>Get comfortable with a tool before moving onto the next.</li>
+    <li>Ask for help when you need it.</li>
+    <li>This was all new, at one time, to everyone who went down this path!</li>
   </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > JavaScript is no longer only running on the front-end.
-
-    > JavaScript is literally everywhere. In fact, there's a popular conference devoted to this fact, JSEverywhere
-
-    > I've used this JS Stack to create services for several companies, where it's now in production use.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- A few words about NodeJS ----------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>A few words about NodeJS</h3>
-  <img style="border: 0; padding: 20px;" src="images/node.png">
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- A few words about NodeJS ----------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Node.JS</h3>
-  <ul>
-    <li>So in case you don't know: NodeJS is a platform tool which can be used to build network applications using JavaScript</li>
-    <li>However, Node is also used to build both server and client-side tools</li>
-    <li>For example, the Grunt and Gulp build tools sit on top of Node, also the transpilers we spoke about are also powered by Node</li>
-    <li>Heck, even the Brackets and Atom text editors are powered by client-side NodeJS!</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > NodeJS is a platform tool which allows you to build network applications, such as web servers, API servers etc...
-
-    > Best of all it allows you to do so using JavaScript!
-
-    > Many people think NodeJS is a server technology. However, it's much more than that. NodeJS powers local client-side applications such as build tools and transpilers.
-
-    > Heck even brackets and atom are being powered by NodeJS.
-
-    > For many developers node has replaced the need to write complex shell scripts. Instead we just use
-    JavaScript. I wrote a commandline tool called bunext to query application log files.
-
-    > Node has also helped to bring JS to Robotics
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- JavaScript in Robotics ------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>JS in Robotics, checkout Cylon.js and NodeBots</h3>
-  <img style="border: 0; padding: 20px;" src="images/U-87-Cyber-Combat-Unit.jpg">
-  <ul>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > JS is also being used in Robotics (thanks to NodeJS), checkout Cylon.js and NodeBots
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- JavaScript in Robotics ------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>No really! JavaScript on a chip</h3>
-  <img style="border: 0; padding: 20px;" src="images/esprunio.jpg">
-  <br/>
-  <ul>
-    <li>Checkout: http://www.espruino.com</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > The nice thing about these guys is that they offer a large collection of modules from accelerometers to servo
-    motors.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- JavaScript in Robotics ------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Nodecopters!</h3>
-  <img style="border: 0; padding: 20px;" src="images/NodeCopter_Berlin_2012.png">
-  <h6>http://www.nodecopter.com</h6>
-  <h6>https://github.com/felixge/node-ar-drone</h6>
-  <aside class="notes" data-markdown="">
-    ---
-    > Here is an image of a Drone being controlled at NodeCopter Berlin in 2012.
-
-    > The project uses a node.js client for controlling Parrot AR Drone quad-copters.
-
-    > How cool is that?
-
-    > I had a chance to see that live at the 2013 JS.Everywhere conference in San Francisco
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>In Minority Report, Tom Cruise manipulated holographic screens by waving his hands in mid-air</h3>
-  <img style="border: 0; padding: 20px;" src="images/minority-report.gif">
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>The LeapMotion Controller</h3>
-  <img style="border: 0; padding: 20px;" src="images/leap.jpg">
-  <h3>Programmable using JavaScript</h3>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>In fact, the presentation you're watching now can be controlled using a LeapMotion device</h3>
-  <aside class="notes" data-markdown="">
-    ---
-    > So I brought one with me today. After the prentation I'll be glad to give a live demo.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/leapmotion-code.png">
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- How to be a better developer / Tips for leveling up -------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="cube" data-transition-speed="medium">
-  <h3>How to be a better developer</h3>
-  <img style="border: 0; padding: 20px;" src="images/Ninja-Coder.jpg">
-</section>
-
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Tips for leveling up</h3>
-  <ul>
-    <li>Pay attention to flow: http://en.wikipedia.org/wiki/Flow_(psychology)</li>
-    <li>Learn to optimize for flow</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > The following tips will help you or someone you know improve their skills on their way to modern web dev mastery.
-
-    > A key takeaway is the concept of "Optimization of flow"
-
-    > According to Wikipedia: "In positive psychology, flow, also known as zone, is the mental state of operation in
-    which a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and
-    enjoyment in the process of the activity. In essence, flow is characterized by complete absorption in what one
-    does.
-
-    > Learn to pay attention to flow. Are you smoothly developing? Or does building your web app feel like you're
-    grinding the clutch on a stick shift car?
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Improve your typing skills  -------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Improve your typing skills...</h3>
-  <img style="border: 0; padding: 20px;" src="images/speed-typing.jpg">
-  <aside class="notes" data-markdown="">
-    ---
-    > Again, this goes back to flow.
-
-    > If you're looking for keys and poking your keyboard using two fingers you're not moving as fast as you could.
-
-    > Furthermore, and this is important, you're spending too much time thinking about typing when you should be
-    thinking about your code.
-
-    > When learning to type you may still not use the optimal fingers when striking keys. For example, beware the weak
-    pinky (sometimes called the baby finger). I tend to use my ring finger when I should be using my pinky.
-
-    > I use Mac laptops. I also use Apple's portable keyboard because it has the exact same key layout as the laptops.
-    This ensures that I'm able to optimize my key memorization without having to account for different keyboards.
-
-    > Strive to be like the piano player who creates music. She's not thinking of where keys are located. Instead she's
-    engaged in a mental flow that produces music - it's nothing short of amazing when you stop to consider it.
-  </aside>
-</section>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>... so you can free your mind</h3>
-  <img style="border: 0; padding: 20px;" src="images/free-your-mind.jpg">
-  <aside class="notes" data-markdown="">
-    ---
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Learn to use the command line ------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Learn to use the command line</h3>
-  <img style="border: 0; padding: 20px;" src="images/shell.png">
-  <aside class="notes" data-markdown="">
-    ---
-    > You'll be better prepared to work on automation projects if you're comfortable with the command line.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Love your code  -------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Show the code some love!</h3>
-  <img style="border: 0; padding: 20px;" src="images/i_love_coding_mug.jpg">
-  <ul>
-    <li>Style guides and beautifiers: http://addyosmani.com/blog/javascript-style-guides-and-beautifiers</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > As a web developer you should really care about code.
-
-    > Not just how it works, but how it looks.
-
-    > Adopt a code style, enforce one on your team, and use code beautifiers to ensure that code retains an agreed upon look
-
-    > Show your code some love and checkout Addy Osmani's talk.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <ul>
-    <li>Leverage existing tools, libraries and frameworks</li>
-    <li>Embrace best practices</li>
-    <li>Attend conferences, or watch them on YouTube</li>
-    <li>Checkout online training sites such as Lynda.com, Tuts+, CodeSchool</li>
-    <li>Podcasts such as the JavaScript Jabber show and NodeUp</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > During the past five years there has been an explosive growth of tools.
-
-    > New tools are appearing at a dizzying rate.
-
-    > If you follow this stuff you know what I mean. It's impossible to really keep up with it all.
-
-    > Still, you need to keep an eye on new development and learn just enough to decide whether it's something you
-    should care about.
-
-    > The Web development community has really grown up. Not only is it on par with native development, in someways
-    it's leading. There is an order of magnitude more going on in the Web and JavaScript community than in any other
-    language or platform.
-
-    > Great ways to stay on top of modern web dev is to embrace tools and best practices. Also engage the community by
-    attending meetups and conferences.
-
-    > Don't forget the web is your friend. Checkout the great training sites available.
-
-    > Sure some of them charge 20 bucks or more per month. But seriously, it's a small price to invest in your career.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Learn JavaScript  ------------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Learn JavaScript</h3>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- No really, Learn JavaScript!  ------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>No really, Learn JavaScript!</h3>
-  <ul>
-    <li>Still surprised by the "this" keyword?</li>
-    <li>Don't use prototype?</li>
-    <li>Don't understand type coercion?</li>
-    <li>Are you mostly using arrays and not using objects as data structures?</li>
-    <li>Don't understand hoisting?</li>
-    <li>Don't understand block vs function scoping?</li>
-    <li>Are you confused by closures?</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Are you still surprised by the "this" keyword?
-
-    > You don't use prototype?
-
-    > Don't understand type coercion?
-
-    > Are you mostly using arrays and not using objects as data structures?
-
-    > Don't understand hoisting?
-
-    > Don't understand block vs function scoping?
-
-    > Are you confused by closures?
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Then you don't really know JavaScript  --------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Then you don't really know JavaScript</h3>
-  <img style="border: 0; padding: 20px;" src="images/You_Don_t_Know_JS_Kyle_Simpson.png">
-  <ul>
-    <li>Checkout Kyle Simpson's book series</li>
-  </ul>
-  <p>
-    <small>Bonus: Checkout Kyle's presentation deck for the 2013 HTML5 Developer Conference at
-      <a href="http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html">http://html5devconf.com/archives/oct2013/speakers/kyle_simpson.html</a>
-    </small>
-  </p>
-  <aside class="notes" data-markdown="">
-    ---
-    > I attended Kyle Simpson's talk "New Rules for JS" at the fall 2013 HTML5 Developers Conference in San Francisco
-    where he proclaimed in a room full of web developers: "Most of you don't know JavaScript".
-
-    > I remember being slightly offended by his accusation.
-
-    > His talk, which lead to a series of books, was an eye opener.
-
-    > I recommend you check out his books and slide deck.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Read the source Luke  -------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/read-the-source-luke.jpg">
-  <ul>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Another great way to learn JavaScript is to read the source code for many popular libraries.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Read the source Luke  -------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <ul>
-    <li>View the source for annotated Backbone.js, underscore.js</li>
-    <li>http://backbonejs.org/docs/backbone.html</li>
-    <li>http://underscorejs.org/docs/underscore.html</li>
-    <li>Open up the jQuery source file and see if you can follow along</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Open up library code you use and try to follow along
-
-    > See stuff you don't understand? Those are good opportunities to learn more about JavaScript.
-
-    > Ask others to help explain a section of code which might not be clear.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Modern web devs are already using next generation JavaScript  ---------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Modern web devs are already using next generation JavaScript</h3>
-  <ul>
-    <li>ES6 is the next version of JavaScript</li>
-    <li>Scheduled for a mid 2015 release</li>
-    <li>However, devs have been using it since 2011 when Google's Traceur project was presented at JSConf</li>
-    <li>NodeJS 0.8.12 started introducing support for ES6 in 2012</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > This means that if you're using NodeJS you can specify the --harmony flag when starting your node app.
-
-    > Traceur compiles ES6 to ES5 so the resulting code can run in the web browsers of today.
-  </aside>
-</section>
-
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Learn to use your editor  ---------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Learn to use your editor</h3>
-  <img style="border: 0; padding: 20px;" src="images/Atom.png">
-  <aside class="notes" data-markdown="">
-    ---
-    > Learn to use your program editor!
-
-    > Most editors have all sorts of time saving keyboard short-cuts. Learn them!
-
-    > Learn them for the same reason you should learn to type. To improve your flow and free your mind.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Consider going fullstack ----------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Consider going full-stack</h3>
-  <img style="border: 0; padding: 20px;" src="images/fullstack-pancakes.jpg">
-</section>
-
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Full-stack Developer</h3>
-  <ul>
-    <li>Build both the front-end and back-end of your next application</li>
-    <li>Today full-stack development can also include cloud deployments and scaling</li>
-    <li>Motto: Front to back to cloud</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > Consider becoming a full-stack developer.
-
-    > If you opt for a NodeJS backend, then you can at least use the the same language, JavaScript, and related
-    tool infrastructure.
-
-    > You can also use a NodeJS require-style module loader on the client side by using Browserify.
-
-    > Full stack development isn't for everyone. But it's definitely for individuals who like to work on side projects and gain an end to end understanding.
-  </aside>
-</section>
-<section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/one-man-band.png">
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Join GitHub  ----------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Join GitHub</h3>
-  <img style="border: 0; padding: 20px;" src="images/github.jpg">
-  <aside class="notes" data-markdown="">
-    ---
-    > Sign up for a free GitHub account.
-
-    > This allows you to post code sample and share them with your fellow developers.
-
-    > It's a great way to ask other developers for help because you can point them to your github repository where they can grab your code.
-
-    > I use GitHub for all my work. I can't tell you how many times I've been able to point to a piece of code and review it over Skype with a fellow developer.
-
-    > There are so many good reasons to use this service and I can't think of one reason not to.
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Attend more meetups  --------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <h3>Attend more meetups</h3>
-  <img style="border: 0; padding: 20px;" src="images/hcjs_logo_01.png">
-  <aside class="notes" data-markdown="">
-    ---
-    > This is how we all keep up with the latests while meeting fellow developers
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Holy shit Batman, that's a lot to learn!  ------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <p>Holy %hit Batman, that's a lot to learn!</p>
-  <img style="border: 0; padding: 20px;" src="images/HolyShitBatman.jpg">
-  <aside class="notes" data-markdown="">
-    ---
-    > And to this Batman might reply...
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- Take it one day at a time ---------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="slow">
-  <h3>Take it one day at a time</h3>
-  <ul>
-    <li>The key is to be better today than you were yesterday</li>
-    <li>Pick an area of interest and work on that, then move to the next</li>
-    <li>Learn one new thing every month and at the end of the year you'll be worth 10-20K more</li>
-  </ul>
-  <aside class="notes" data-markdown="">
-    ---
-    > A key to leveling up is to take things one step at a time.
-
-    > Strive to be better today than you were yesterday.
-
-    > These small steps can have far reaching possibilities. You can for example increase your annual earnings by being more marketable.
-
-    > If that happens, consider donating to our JS meetup!
-  </aside>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- And lastly ------------------------------------------------------------------------------------------------------->
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="slow">
-  <h2>And lastly...</h2>
-</section>
-
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<!-- keep calm and level up  ------------------------------------------------------------------------------------------>
-<!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="none" data-transition-speed="medium">
-  <img style="border: 0; padding: 20px;" src="images/keep-calm-and-level-up.png">
-  <aside class="notes" data-markdown="">
-    ---
-    > Remember there's nothing to it but to do it!
-
-    > If you need help, consider posting on our meetup's discussions forum and don't be afraid to ask members for help.
-  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -1539,7 +1020,6 @@
     <li>About: http://cjus.me</li>
   </ul>
 </section>
-
 
 </div>
 </div>
