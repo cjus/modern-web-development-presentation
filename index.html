@@ -75,8 +75,9 @@
     ---
     > The subject of web development is too vast to cover in a short presentation
 
-    > So we have a lot to cover so I won't be doing any deep dives. This presentation should be a jumping off point for
-    your own further investigation.
+    > Because we have a lot to cover I won't be doing any deep dives.
+
+    > This presentation should be a jumping off point for your own further investigation.
 
     > I may not cover your favorite tool. That doesn't mean it's not cool. Definitely tell us about it after the
     presentation.
@@ -86,9 +87,6 @@
 
     > This is my highly opinionated view. You may disagree. As is common in these sorts of things, there are lots of
     ways to accomplish similar goals.
-
-    > In the spirit of modern web development this presentation is built entirely with HTML, CSS and JavaScript and
-    works in your modern web browser and mobile devices.
 
     > This presentation is also open source and available on Github.
 
@@ -148,7 +146,7 @@
 
     > How about deploying raw files to web servers without packaging?
 
-    > Does your project code contain monolithic source files which lack any real organization?
+    > Does your project contain monolithic files which lack any real organization?
 
     > Are you using a home grown framework instead of one of the well established ones such as Backbone, Ember,
     Knockout, React or Angular?
@@ -168,13 +166,15 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Do you feel that file folders and zip files are a quick and convenient way of tracking your code changes?
+    > Do you feel that file folders and zip files are a convenient ways of tracking your code changes?
 
     > Do you repeat manual processes instead of automating them?
 
     > Do you think that linters, style checkers and beautifiers are for wimps?
 
-    > Do you feel that you don't adequately test your code?
+    > Do you feel that perhaps you don't adequately test your code?
+
+    > Do you you feel that the beauty and elegance of your code makes it self documenting?
   </aside>
 </section>
 
@@ -196,8 +196,9 @@
   <img style="border: 0; padding: 20px;" src="images/jane-stop-this-crazy-thing.jpg">
   <aside class="notes" data-markdown="">
     ---
-    > Modern web tools and practices help you take control of your dev cycles and add predictability to your software
-    releases.
+    > Modern web tools and practices help you take control of your dev cycles
+
+    > and add predictability to your software releases.
 
     > Let's take a closer look.
   </aside>
@@ -208,13 +209,23 @@
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <h3>How can modern tools and practices help?</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > So, how can modern tools and practices help?
+
+    > I'm super glad you asked!
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- By providing better tools ---------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>By providing better tools</h3>
+  <h3>By providing better tools and processes</h3>
+  <aside class="notes" data-markdown="">
+    ---
+    > Simply stated: by providing better tools and processes
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -246,6 +257,8 @@
   <img style="border: 0; padding: 20px;" src="images/macvspc.png">
   <aside class="notes" data-markdown="">
     ---
+    > Mac or PC?
+
     > Believe it or not, this question comes up more than you'd expect.
   </aside>
 </section>
@@ -263,17 +276,23 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
+    > Which is better?
+
     > Generally speaking it depends on what you're trying to do.
 
-    > It also depends on your level of taste and build quality expectations.
+    > It also depends on your level of taste
 
-    > I spent the past few years working with startups in the San Francisco bay area where attended lots of meetups.
+    > and build quality expectations.
+
+    > I spent the past few years working with startups
+
+    > in the San Francisco bay area where I attended lots of meetups.
 
     > In my experience, web developers seem to clearly favor Macs.
 
     > However the same is true at the company I currently work with in mid-town New York.
 
-    > There are some reasons this might be the case.
+    > So I'm not sure it's a east versus west coast thing.
   </aside>
 </section>
 
@@ -293,21 +312,29 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
+    > There are some reasons this might be the case.
+
     > The web is powered by Linux machines.
 
-    > For developers working with Linux environments, Macs offer compatible local terminal environments
+    > For developers working with Linux, Macs offer compatible terminal environments
 
-    > The two most popular web servers are Apache and Nginx - both born and bread on Linux - but now available for
-    Windows.
+    > The two very popular web servers,  Apache and Nginx were both born and bread on Linux.  They run natively on Mac without the need for extra software to manage them.
 
-    > For a long time, most popular Internet software didn't even run on Windows. Microsoft has invested heavily in
-    ensuring that's not longer the case. Largely because of their Azure, cloud platform.  The company that was allergic
-    to open source is now embracing it.
+    > For a long time, most popular Internet software didn't even run on Windows.
 
-    > If you're developing native mobile products on iOS or Android, Macs allow you to do both.
+    > Microsoft has invested heavily ensuring that's no longer the case. Largely because of their Azure, cloud platform.  The company that was allergic to open source is now embracing it.
 
-    > So what if you're stuck with a PC? We have a saying in photography... the best camera is the one you have have
-    with you. Because, you can in fact do all this on a PC, it just requires you to jump through more hoops.
+    > A lot has changed in recent years.
+
+    > Another consideration is if you're developing native mobile products on iOS or Android
+
+    > Macs allow you to do both.
+
+    > So what if you're stuck with a PC?
+
+    > We have a saying in photography... the best camera is the one you have have with you.
+
+    > The fact is that you can do all this on a PC, it just requires you to jump through more hoops.
   </aside>
 </section>
 
@@ -316,6 +343,7 @@
   <p>That said, some folks like that sort of thing</p>
   <aside class="notes" data-markdown="">
     ---
+    > That said, some folks like that sort of thing
   </aside>
 </section>
 
@@ -333,10 +361,14 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > A popular option is to use virtual machine software on your Mac or PC, in order to run Linux.
+    > What about VMs?
+
+    > A popular option is to use virtual machine software
+
+    > on your Mac or PC, in order to run Linux.
 
     > I use Macs and my work laptop has a linux VM running so I can develop locally while accessing a web server that
-    routes calls to API servers.
+    routes calls to company API servers.
 
     > Oracle has a free VM product called Virtual Box that runs on both Mac's and PC's.
 
@@ -370,9 +402,9 @@
 
     > This totally works. However, it's not the speediest of things.
 
-    > If you have a machine with lots of memory and spare CPU cores you might be just fine.
+    > If you have a machine with lots of memory and spare CPU cores then YOU might be just fine.
 
-    > I've done this on an 8GB Dell with quad core CPUs and solid state drives
+    > I've done this on an 8GB Dell with quad core CPUs and solid state drives and it was managable.
   </aside>
 </section>
 
@@ -407,17 +439,24 @@
 
     > However, a text editor designed for web development will help you do much more than just editing.
 
-    > At the opposite end of web friendly text editors are IDEs, Integrated Development Environments. These products
-    typically integrate tools which extend what you can do within a common environment. For some, such as yours
-    truely, this can be a nice advantage. For example, text editors don't typically allow you to debug your code from
-    within the editor - instead you do this outside of the editor. Where as, some IDEs allow you to debug right inside
-    the IDE.
+    > At the opposite end of web friendly text editors are IDEs, Integrated Development Environments.
+
+    > These products typically integrate tools which extend what you can do within a common environment.
+
+    > For some, such as yours truly, this can be a nice advantage.
+
+    > For example, text editors don't typically allow you to debug your code from within the editor - instead you do this outside of the editor. Where as, some IDEs allow you to debug right inside the IDE.
 
     > It is worth noting that many of today's web dev text editors go beyond being basic text editors and also offer a
     fare amount of tool integration.
 
-    > It's definitely not easy to decide which one is best for you. Most devs simply use what the cools kids are
-    using... what ever that might be this week.
+    > It's definitely not easy to decide which one is best for you.
+
+    > Most devs simply use
+
+    > whatever the cools kids are using...
+
+    > what ever that might be this week.
 
     > My tip for you is to compare the costs, and features and see which one best fits your needs. For me, webstorm
     offered the ability to debug node applications and that was and remains an important feature.
@@ -438,13 +477,17 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > A wikipedia page list over 75 text editors. Modern web editors differ from their older counterparts by
-    being designed to support developers working on web projects.
+    > A wikipedia page list over 75 text editors.
 
-    > A super popular editor is Sublime. Webstorm is more of an Integrated Development Environment (IDE) than just an
-    editor. Which you use depends on your needs.
+    > However, modern web editors differ from their older counterparts by being designed to support developers working on web projects.
 
-    > Recent free options include Brackets.io and Atom.
+    > A super popular editor is Sublime.
+
+    > Another is Webstorm, which is more of an Integrated Development Environment (IDE) than just an editor.
+
+    > Which you use depends on your needs.
+
+    > Both Sublime and Webstorm need to be purchased, however, excellent free options include Brackets.io and Atom.
   </aside>
 </section>
 
@@ -462,21 +505,23 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Here's a screen shot of a WebStorm.
+    > Here's a screen shot of WebStorm.
 
     > We can see that our window view consists of panels, each of which serves a distinct purpose.
 
-    > At the top of the window we see quick access features and navigation helpers. Notice how we can see that we're
-    looking at the section tag which is inside of a div with a class name of slides which is inside of a div with a
-    class name of reveal. We can also click on those tags to quickly navigate the html document.
+    > At the top of the window we see quick access features and navigation helpers.
 
-    > The panel on the left shows a project file structure, while the panel on the right shows our source file.
+    > Notice how we can see that we're looking at the section tag which is inside of a div with a class name of slides which is inside of a div with a class name of reveal.
 
-    > Notice the red squiggly line just before the closing section tag. This indicates and error which the IDE found
-    for us. If we hover our mouse cursor over the red line we'd that the cause of the error is a missing a closing
-    aside tag.
+    > We can also click on those tags to quickly navigate the html document.
 
-    > So that's a small example of a tool that can make your job easier.
+    > The panel on the far left shows a project file structure, while the larger panel region on the right shows our source file.
+
+    > Notice the red squiggly line just before the closing section tag.
+
+    > This indicates an error which the IDE found for us. If we hover our mouse cursor over the red line we'd see that the cause of the error is a missing a closing aside tag.
+
+    > So that's an example of an editor can help make your job easier.
   </aside>
 </section>
 
@@ -552,7 +597,9 @@
 
     > From the profiling of network calls to the debugging of program state using breakpoints.
 
-    > If you only casually use those tools, then you may not getting the most out of them! Have a deeper look.
+    > If you only casually use those tools, then you may not be getting the most out of them!
+
+    > Have a deeper look.
 
     > As a modern web developer you should be using Chrome Canary or Firefox Developer Edition.
   </aside>
@@ -571,15 +618,17 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > One area that makes a huge difference is in code quality. The more error prone your code, the less likely it
-    will meet customer needs.
+    > One area that makes a huge difference is code quality.
 
-    > Modern devs understand that through code reviews are time consuming and policing code is a thankless job. You
-    just end up pissing off your fellow devs.
+    > The more error prone your code, the less likely it will meet customer needs.
 
-    > That's why successful devs use tools like jshint or jslint (to spot errors and questionable practices).
+    > Modern devs understand that through code reviews are time consuming and policing code is a thankless job.
 
-    > They also use tools like js-beautify to fix code that's not properly formatted and JSCS (The Javascript code
+    > You just end up pissing off your fellow devs.
+
+    > That's why successful devs use tools like jshint or jslint to spot errors and questionable practices.
+
+    > They also use tools like js-beautify to spots code that's not properly formatted and JSCS (The Javascript code
     style checker) to ensure that code maintains an agreed upon look and feel.
 
     > The good news is that many editors, (especially the four we looked at) include support for these tools.
@@ -610,29 +659,32 @@
   <!--@formatter:on-->
   <aside class="notes" data-markdown="">
     ---
-    > There are lots of libraries that can help you develop web applications.
+    > There are lots of add-on libraries that can help you develop web applications.
 
-    > jQuery in particular has become a staple in most developer diets.
+    > jQuery in particular has become a staple for most web developers.
 
     > Libraries like BootStrap allow you to quickly style an application. This has been a god send for artistically
-    challenged developers the world over! This has also lead to a common complaint that too many sites look alike or
-    that you can always spot a Bootstrap enabled sites.
+    challenged developers the world over!
 
-    > Libraries like Underscore and Lodash so something entirely different. They provide developers with new programming
+    > Libraries like Underscore and Lodash offer something entirely different. They provide developers with new programming
     statements (really functions) which simplify common programming tasks.
 
-    > Take the _.uniq statement for example.  Given an array it returns an array of unique values.  Handy right?
+    > They offer a pattern inspired by functional programming, which has been proven to lead to fewer errors.
+
+    > Take the _.uniq statement for example.  Given an array it returns an array of unique values.
+
+    > Handy right?
 
     > Next we have a function called timesThree which multiples a number argument by 3 and returns the new value.
 
-    > My using the _.map statement we can take an array of values and map them using the timeThree function, that is,
+    > By using the _.map statement we can take an array of values and map them using the timeThree function, that is,
     pass each array element to the timesThree function and store the resulting values in a new array.
 
-    > Lodash is considered the more modern of the two, but check out both underscore and lodash.
+    > Lodash is considered the more feature rich and modern of the two, but check out both underscore and lodash.
 
     > This brings us to an interesting challenge.
 
-    > The more libraries we add to our projects, the more we need a tool to maintaining our app dependencies.
+    > The more libraries we add to our projects, the more we need a tool to maintain and manage our app's dependencies.
   </aside>
 </section>
 
@@ -655,11 +707,6 @@
 
     > A package manager such as Bower will help you track and maintain your app's dependencies. When it comes time to
     upgrade a package you can use Bower to download and install the latest version.
-
-    > Our Ruby friends introduced us to package managers back in the day. Today, package managers exists for all major
-    platform.
-
-    > With NodeJS we have NPM, the Node Package Manager.
   </aside>
 </section>
 
@@ -675,7 +722,7 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > Improving site performance can lead to a competitive advantage as customers prefer your site instead of your
+    > Improving site performance can lead to a competitive advantage as customers prefer your site over your
     competitors.
 
     > In a study, Amazon determined that a page load slowdown of just one second could cost them $1.6 billion in sales
@@ -687,8 +734,9 @@
     > Clearly, performance matters.
 
     > Optimizing a web application for production use involves intelligently packaging site files so that they take up
-    less space and load faster. This process involves tools called minifiers which translate file contents into
-    smaller version by renaming code variable and doing things like removing white space characters.
+    less space and load faster.
+
+    > This process involves tools called minifiers which translate file contents into smaller version by renaming code variable and doing things like removing white space characters.
 
     > Minifiers exists for HTML, CSS and JavaScript.
 
@@ -713,16 +761,21 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > You should be using source control for all of your work.  There's no good excuse for not doing so.
+    > You should be using a source control system for all of your work.
 
-    > The benefits of a source control system is that you can track changes to the work you're doing.  How many of us
-    haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it
-    against a more recent change?
+    > There's no good excuse for not doing so.
+
+    > The benefits of a source control system is that you can track changes to the work you're doing.
+
+    > How many of us haven't at one time or another wished we could go back to an earlier version of a file - even if just to compare it against a more recent change?
 
     > Seriously - source control - it's not optional!
 
     > One, free and wildly successful source control system is called Git. Git was initially created by Linus Torvalds
-    (the creator Linux) back in 2005
+    (the creator Linux) back in 2005.
+
+    > Github is a service which is based on Git, but adds loads of additional social features.
+
   </aside>
 </section>
 
@@ -753,8 +806,9 @@
 
     > Ex: SASS/Compass, empowers devs with more expressive CSS which gets transpiled to CSS3 during a build process.
 
-    > Then there's Asm.JS to enable C++ to JS transpilation. If you haven't seen the Bananabread demo you really should
-    check it out.
+    > Then there's Asm.JS to enable C++ to JS transpilation.
+
+    > BTW, If you haven't seen the Bananabread demo you really should check it out.
   </aside>
 </section>
 
@@ -764,6 +818,10 @@
 <section data-transition="none" data-transition-speed="medium">
   <h3>Use JavaScript libraries and frameworks</h3>
   <img style="border: 0; padding: 20px;" src="images/frameworks.jpg">
+  <aside class="notes" data-markdown="">
+    ---
+    > Hint... this is not the Beatles.
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -780,13 +838,17 @@
   </ul>
   <aside class="notes" data-markdown="">
     ---
-    > There are dozens to choose from. They each provide ways of helping you structure and build web projects.
+    > There are dozens of JavaScript libraries and frameworks to choose from.
 
-    > For non-trivial projects you really should be using one of them. Which one you **should use** can be a
-    subject of some heated debate.
+    > They each provide ways of helping you structure and build web projects.
 
-    > As a project increase in size, more devs end up touching the code. Worse though is that not all of the devs
-    end up sticking around.
+    > For non-trivial projects you really should be using one of them.
+
+    > Which one you **should use** can be a subject of some heated debate.
+
+    > As a project increase in size, more devs end up touching the code.
+
+    > Worse though is that not all of the devs end up sticking around.
 
     > Quite often the original developers are long gone. This is why choosing a well-known library or framework
     (which you didn't invent) can help when it comes time to hire new developers.
@@ -795,13 +857,15 @@
     of the project. New team members then simply need to learn where files are stored and how the project is assembled
     in order to get up to speed.
 
-    > Best of all they can use books and online training materials to get up to speed. Again, because you didn't
+    > Best of all
+
+    > they can use books and online training materials to get up to speed. Again, because you didn't
     invent the framework there's a greater chance that you'll find a helping hand when you need it.
 
     > JS frameworks help with a concept called "Separation of concerns" by introducing other concepts such as Models,
     Views, Controllers, Service, Routers and other good stuff.
 
-    > A key benefit is that they help add structure and help improve maintainability
+    > That in turn helps add structure and help improve maintainability.
 
     > Another great benefit is that they provide you well tested and battle harden code which you didn't have to write
     yourself!
@@ -811,10 +875,15 @@
 
     > That is, on how they believe you should structure your application.
 
-    > A library like backbone.js has less opinions than a full-blown framework such as AngularJS. Some differ in how
-    there allow you to interact with the dom. Angular for instance, specifies how and when you should do so. Which
-    library or framework you use depends on how opinions you feel you can benefit from. Unless you suffer from not
-    invented here syndrome, you will probably benefit from one of the many freely available frameworks.
+    > A library like backbone.js has less opinions than a full-blown framework such as AngularJS.
+
+    > Some differ in how there allow you to interact with the DOM. Angular for instance, specifies how and when you should do so.
+
+    > Which library or framework you use
+
+    > depends on which opinions (points of view) you're willing to accept.
+
+    > Unless you suffer from not invented here syndrome, you will probably benefit from one of the many available frameworks.
   </aside>
 </section>
 
@@ -830,6 +899,12 @@
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
   <img style="border: 0; padding: 20px;" src="images/webcomponent.png">
+  <aside class="notes" data-markdown="">
+    ---
+    > Web components are actually set of web standards for developing components.
+
+    > You'll use those components to build applications.
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
@@ -850,10 +925,6 @@
   <!--@formatter:on-->
   <aside class="notes" data-markdown="">
     ---
-    > Web components are actually set of web standards for developing component.
-
-    > You'll use those components to build applications.
-
     > This will result in a new web component eco system where you'll be able to buy and sell components
 
     > So this has been in development for the past several years.
@@ -869,11 +940,11 @@
 <!-- Using the cloud  ------------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>To infinity and beyond - hosting in the cloud</h3>
+  <h3>To infinity and beyond!</h3>
   <img style="border: 0; padding: 20px;" src="images/to-infinity-and-beyond.jpg">
 </section>
 <section data-transition="none" data-transition-speed="medium">
-  <h3>To infinity and beyond - hosting in the cloud</h3>
+  <h3>Hosting in the cloud</h3>
   <ul>
     <li>Hosting in the cloud has never been easier or cheaper</li>
     <li>This is an important skill every modern web developer should have</li>
@@ -922,7 +993,7 @@
     Gulp.
 
     > They each feature a massive library of plugins for things like automatically checking your JavaScript for
-    correctness, running tests scripts, packaging your projects and deploying them to the the cloud and much much
+    correctness, running tests scripts, packaging your projects and deploying them to the cloud and much much
     more.
 
     > If you're not using these tools now, they should be in your future - set aside some time to get to know them.
@@ -941,6 +1012,7 @@
       gulp-jsbeautifier, gulp-usemin, gulp-minify-html, gulp-minify-css, gulp-ng-annotate, gulp-rev, gulp-imagemin,
       imagemin-pngcrush
     </li>
+    <li>Yo! use Yeoman: http://yeoman.io</li>
   </ul>
   <!--@formatter:off-->
     <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -960,6 +1032,8 @@
     > The really cool thing is that most of those plugins run when I type gulp dist.
 
     > This is serious automation and a major time saver during development
+
+    > When you're ready to do this on your own projects checkout Yeoman.
   </aside>
 </section>
 
@@ -972,7 +1046,7 @@
     <li>A tool that periodically builds your product in the background and sends you messages if your build doesn't
       succeed</li>
     <li>Runs your tests scripts as well</li>
-    <li>Consider this an early warning system before your build makes it to QA and long before it makes it to
+    <li>Consider this an early warning system *before* your build makes it to QA and long before it makes it to
       production</li>
     <li>Here are just few services to consider: Jenkins, Travis, CodeShip and Drone</li>
   </ul>
@@ -981,8 +1055,9 @@
     > Continuous integration (or CI as it's commonly called) is a process whereby your project is build and tested
     periodically
 
-    > Modern web developers recognize the value of automation and if we can automate some of our testing then we're
-    better off!
+    > Modern web developers recognize the value of automation
+
+    > and if we can automate some of our testing then we're better off!
 
     > As an early warning system, CIs are a major time saver because issues are identified as you develop and check in
     your code
@@ -1005,12 +1080,26 @@
     <li>Ask for help when you need it.</li>
     <li>This was all new, at one time, to everyone who went down this path!</li>
   </ul>
+  <aside class="notes" data-markdown="">
+    ---
+    > So there are lots of tools that modern web devs use to step up their game.
+
+    > This might all seem overwhelming but having a plan of attack will help you get through it.
+
+    > Focus on a specific tool or process until you're comfortable with it. Then move onto the next.
+
+    > Ask for help! It's one of the reasons we host these meetups - so we can create a community around support.
+
+    > And most of all remember
+
+    > at one point each of these things was new to each of us.
+  </aside>
 </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------>
 <!-- Contact ---------------------------------------------------------------------------------------------------------->
 <!-- ------------------------------------------------------------------------------------------------------------------>
-<section data-transition="fade" data-transition-speed="slow">
+<section data-transition="cube" data-transition-speed="slow">
   <h3>Contact</h3>
   <ul>
     <li>cjus on Twitter and Github</li>

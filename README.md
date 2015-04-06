@@ -1,5 +1,13 @@
 # Modern Web Development Presentation
 
+## About
+
+This presentation is about modern web development. It covers the tools and practices developers should be considering as they develop web applications.
+
+Presented at:
+
+[Hudson County JavaScript on Monday April  6th] (http://www.meetup.com/Hudson-County-JavaScript-Meetup/events/220926645/)
+
 ## Tips for running this presentation
 
 If you're not familiar with RevealJS the following tips might prove helpful. Try these keys while the presentation is running.
